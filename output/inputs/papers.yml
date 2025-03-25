@@ -1,0 +1,3359 @@
+- abstract: 'Phonology, the study of speech''s structure and pronunciation rules,
+    is a critical yet often overlooked component in Large Language Model (LLM) research.
+    LLMs are widely used in various downstream applications that leverage phonology
+    such as educational tools and poetry generation. Moreover, LLMs can potentially
+    learn imperfect associations between orthographic and phonological forms from
+    the training data. Thus, it is imperative to benchmark the phonological skills
+    of LLMs. To this end, we present PhonologyBench, a novel benchmark consisting
+    of three diagnostic tasks designed to explicitly test the phonological skills
+    of LLMs in English: grapheme-to-phoneme conversion, syllable counting, and rhyme
+    word generation. Despite having no access to speech data, LLMs showcased notable
+    performance on the PhonologyBench tasks. However, we observe a significant gap
+    of 17% and 45% on Rhyme Word Generation and Syllable counting, respectively, when
+    compared to humans. Our findings underscore the importance of studying LLM performance
+    on phonological tasks that inadvertently impact real-world applications. Furthermore,
+    we encourage researchers to choose LLMs that perform well on the phonological
+    task that is closely related to the downstream application since we find that
+    no single model consistently outperforms the others on all the tasks.'
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/224/0288
+    emails: asuvarna31@gmail.com
+    first_name: Ashima
+    homepage: https://sites.google.com/view/asuvarna31/
+    last_name: Suvarna
+    name: Ashima Suvarna
+    semantic_scholar_id: https://www.semanticscholar.org/author/A.-Suvarna/51153314
+    username: ~Ashima_Suvarna1
+  - dblp_id: https://dblp.org/pid/276/8906
+    emails: harshitaskh@gmail.com
+    first_name: Harshita
+    google_scholar_id: https://scholar.google.co.in/citations?user=ypLheP4AAAAJ&hl=en
+    institution: UCLA Computer Science Department, University of California, Los Angeles
+    last_name: Khandelwal
+    name: Harshita Khandelwal
+    username: ~Harshita_Khandelwal1
+  - dblp_id: https://dblp.org/pid/117/4036
+    emails: violetpeng@cs.ucla.edu
+    first_name: Nanyun
+    google_scholar_id: https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en
+    homepage: http://vnpeng.net/
+    institution: University of California, Los Angeles
+    last_name: Peng
+    name: Nanyun Peng
+    semantic_scholar_id: https://www.semanticscholar.org/author/Nanyun-Peng/3157053
+    username: ~Nanyun_Peng1
+  decision: Poster
+  end_page: 14
+  file: 4.pdf
+  id: 4
+  num_pages: 14
+  openreview_id: KTwzS2TXL4
+  pdf_file: 2bb2537151c247680c979cf522fbf96021aa23b8.pdf
+  start_page: 1
+  title: 'PhonologyBench: Evaluating Phonological Skills of Large Language Models'
+- abstract: "Recent work shows that large language models (LLMs) can answer multiple-choice\
+    \ questions using only the choices, but does this mean that MCQA leaderboard rankings\
+    \ of LLMs are largely influenced by abilities in choices-only settings? To answer\
+    \ this, we use a contrast set that probes if LLMs over-rely on choices-only shortcuts\
+    \ in MCQA. While previous works build contrast sets via expensive human annotations\
+    \ or model-generated data which can be biased, we employ graph mining to extract\
+    \ contrast sets from existing MCQA datasets. \nWe use our method on UnifiedQA,\
+    \ a group of six commonsense reasoning datasets with high choices-only accuracy,\
+    \ to build an 820-question contrast set. After validating our contrast set, we\
+    \ test 12 LLMs, finding that these models do not exhibit reliance on choice-only\
+    \ shortcuts when given both the question and choices. Thus, despite the susceptibility\
+    \ of MCQA to high choices-only accuracy, we argue that LLMs are not obtaining\
+    \ high ranks on MCQA leaderboards solely due to their ability to exploit choices-only\
+    \ shortcuts."
+  archival: true
+  attributes:
+    paper_type: short
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: nishantbalepur@gmail.com
+    first_name: Nishant
+    google_scholar_id: https://scholar.google.com/citations?user=G8_fojUAAAAJ
+    homepage: https://nbalepur.github.io/
+    last_name: Balepur
+    name: Nishant Balepur
+    username: ~Nishant_Balepur1
+  - dblp_id: https://dblp.org/pid/136/8740
+    emails: rudinger@umd.edu
+    first_name: Rachel
+    google_scholar_id: https://scholar.google.com/citations?user=QKCHaHUAAAAJ&hl=en
+    homepage: https://rudinger.github.io/
+    institution: University of Maryland, College Park
+    last_name: Rudinger
+    name: Rachel Rudinger
+    semantic_scholar_id: https://www.semanticscholar.org/author/Rachel-Rudinger/2034613
+    username: ~Rachel_Rudinger1
+  decision: Poster
+  end_page: 26
+  file: 5.pdf
+  id: 5
+  num_pages: 12
+  openreview_id: hnmn8Bqari
+  pdf_file: e8833e52ce37c9529d40451b97496f9543cc0403.pdf
+  start_page: 15
+  title: Is Your Large Language Model Knowledgeable or a Choices-Only Cheater?
+- abstract: 'Knowledge editing aims at updating knowledge of large language models
+    (LLMs) to prevent them from becoming outdated. Existing work edits LLMs at the
+    level of factual knowledge triplets. However, natural knowledge updates in the
+    real world come from the occurrences of new events rather than direct changes
+    in factual triplets. In this paper, we propose a new task setting: event-level
+    knowledge editing, which directly edits new events into LLMs and improves over
+    conventional triplet-level editing on (1) Efficiency. A single event edit leads
+    to updates in multiple entailed knowledge triplets. (2) Completeness. Beyond updating
+    factual knowledge, event-level editing also requires considering the event influences
+    and updating LLMs'' knowledge about future trends. We construct a high-quality
+    event-level editing benchmark ELKEN, consisting of 1,515 event edits, 6,449 questions
+    about factual knowledge, and 10,150 questions about future tendencies. We systematically
+    evaluate the performance of various knowledge editing methods and LLMs on this
+    benchmark. We find that ELKEN poses significant challenges to existing knowledge
+    editing approaches. Our codes and dataset will be publicly released to facilitate
+    further research.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/69/7742-15
+    emails: peng-h21@mails.tsinghua.edu.cn
+    first_name: Hao
+    google_scholar_id: https://scholar.google.com/citations?user=2ry7XsgAAAAJ&hl=en
+    institution: Tsinghua University, Tsinghua University
+    last_name: Peng
+    name: Hao Peng
+    orcid: https://orcid.org/0009-0006-7192-5790
+    semantic_scholar_id: https://www.semanticscholar.org/author/Hao-Peng/47837854
+    username: ~Hao_Peng6
+  - dblp_id: https://dblp.org/pid/03/2015
+    emails: wangxz098@gmail.com
+    first_name: Xiaozhi
+    google_scholar_id: https://scholar.google.com/citations?user=DjpXXZkAAAAJ
+    homepage: https://bakser.github.io/
+    institution: Department of Computer Science and Technology, Tsinghua University
+    last_name: Wang
+    name: Xiaozhi Wang
+    orcid: https://orcid.org/0000-0002-5727-143X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Xiaozhi-Wang/48631777
+    username: ~Xiaozhi_Wang1
+  - emails: lichunyang0407@gmail.com
+    first_name: Chunyang
+    google_scholar_id: https://scholar.google.com/citations?user=GpXP-a4AAAAJ&hl=en
+    homepage: https://lcy2723.github.io/
+    last_name: Li
+    name: Chunyang Li
+    username: ~Chunyang_Li3
+  - dblp_id: https://dblp.org/pid/199/8788.html
+    emails: zks19@mails.tsinghua.edu.cn
+    first_name: Kaisheng
+    google_scholar_id: https://scholar.google.com/citations?view_op=list_works&hl=en&user=XG64XQsAAAAJ
+    homepage: https://github.com/alpc43
+    last_name: Zeng
+    name: Kaisheng Zeng
+    orcid: https://orcid.org/0000-0002-8104-9652
+    semantic_scholar_id: https://www.semanticscholar.org/author/Kaisheng-Zeng/2099978259
+    username: ~Kaisheng_Zeng1
+  - emails: djs19@mails.tsinghua.edu.cn
+    first_name: Jiangshan
+    homepage: https://github.com/fyjs875
+    last_name: Duo
+    name: Jiangshan Duo
+    username: ~Jiangshan_Duo1
+  - dblp_id: https://dblp.org/pid/20/8038-2
+    emails: caoyixin2011@gmail.com
+    first_name: Yixin
+    google_scholar_id: https://scholar.google.co.uk/citations?user=CnhTvdoAAAAJ
+    homepage: https://sites.google.com/view/yixin-homepage
+    institution: Singapore Management University
+    last_name: Cao
+    name: Yixin Cao
+    username: ~Yixin_Cao1
+  - dblp_id: https://dblp.org/pid/32/5685-1
+    emails: houlei@tsinghua.edu.cn
+    first_name: Lei
+    google_scholar_id: https://scholar.google.com/citations?user=YnIq4hsAAAAJ
+    homepage: https://www.cs.tsinghua.edu.cn/csen/info/1305/4466.htm
+    institution: Tsinghua University, Tsinghua University
+    last_name: Hou
+    name: Lei Hou
+    orcid: https://orcid.org/0000-0002-8907-3526
+    semantic_scholar_id: https://www.semanticscholar.org/author/Lei-Hou/145779862
+    username: ~Lei_Hou2
+  - dblp_id: https://dblp.org/pid/l/JuanZiLi
+    emails: lijuanzi2008@gmail.com
+    first_name: Juanzi
+    google_scholar_id: https://scholar.google.com/citations?user=SgNB-ioAAAAJ
+    homepage: http://keg.cs.tsinghua.edu.cn/persons/ljz/
+    last_name: Li
+    name: Juanzi Li
+    orcid: https://orcid.org/0000-0002-6244-0664
+    semantic_scholar_id: https://www.semanticscholar.org/author/Juan-Zi-Li/8549842
+    username: ~Juanzi_Li1
+  decision: Poster
+  file: 6.pdf
+  id: 6
+  openreview_id: AY5e7AEwwZ
+  pdf_file: ce7bd22f47b2325a470d14e9c92e5df7f9dca2f0.pdf
+  title: Event-level Knowledge Editing
+- abstract: Ensuring factual consistency between the summary and the original document
+    is paramount in summarization tasks. Consequently, considerable effort has been
+    dedicated to detecting inconsistencies. With the advent of Large Language Models
+    (LLMs), recent studies have begun to leverage their advanced language understanding
+    capabilities for inconsistency detection. However, early attempts have shown that
+    LLMs underperform traditional models due to their limited ability to follow instructions
+    and the absence of an effective detection methodology. In this study, we reassess
+    summary inconsistency detection with LLMs, comparing the performances of GPT-3.5
+    and GPT-4. To advance research in LLM-based inconsistency detection, we propose
+    SIFiD (Summary Inconsistency Detection with Filtered Document) that identify key
+    sentences within documents by either employing natural language inference or measuring
+    semantic similarity between summaries and documents.
+  archival: true
+  attributes:
+    paper_type: short
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: jiuding@ualberta.ca
+    first_name: Jiuding
+    google_scholar_id: https://scholar.google.ca/citations?user=sR9gmbEAAAAJ&hl
+    last_name: Yang
+    name: Jiuding Yang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Jiuding-Yang/2132071865
+    username: ~Jiuding_Yang1
+  - emails: pvopliu@tencent.com
+    first_name: Hui
+    google_scholar_id: https://scholar.google.com/citations?user=pnGizm8AAAAJ
+    homepage: https://scholar.google.com/citations?user=pnGizm8AAAAJ
+    institution: QQ Browser Lab, Tecent
+    last_name: Liu
+    name: Hui Liu
+    username: ~Hui_Liu6
+  - emails: weidongguo@tencent.com
+    first_name: Weidong
+    google_scholar_id: https://scholar.google.com/citations?user=FfvgqZYAAAAJ&hl=en
+    homepage: https://scholar.google.com/citations?user=FfvgqZYAAAAJ&hl=en
+    institution: Tencent
+    last_name: Guo
+    name: Weidong Guo
+    username: ~Weidong_Guo1
+  - emails: evanyiu@tencent.com
+    first_name: Zhuwei
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=cIROqIMAAAAJ&sortby=title&view_op=list_works&authuser=1&gmla=AH70aAWQO1rVUxDoniWZK0Hklu49GePEjE52SFkG03X0AD35Wx2R-EHKBYv0JN3bAjarLdmFsgYcTrwYyflrrFoC
+    last_name: Rao
+    name: Zhuwei Rao
+    username: ~Zhuwei_Rao1
+  - emails: henrysxu@tencent.com
+    first_name: Yu
+    homepage: https://orcid.org/0009-0003-6832-7878
+    institution: Tencent
+    last_name: Xu
+    name: Yu Xu
+    username: ~Yu_Xu5
+  - dblp_id: https://dblp.org/pid/82/4953
+    emails: dniu@ualberta.ca
+    first_name: Di
+    google_scholar_id: https://scholar.google.ca/citations?user=3kC5OogAAAAJ&hl=en
+    homepage: https://www.ualberta.ca/~dniu
+    institution: University of Alberta and University of Alberta
+    last_name: Niu
+    name: Di Niu
+    orcid: https://orcid.org/0000-0002-5250-7327
+    username: ~Di_Niu1
+  decision: Poster
+  end_page: 31
+  file: 8.pdf
+  id: 8
+  num_pages: 5
+  openreview_id: heY2uJXU3R
+  pdf_file: 3089e7ec1ebd40d66041d6c1478b1556e3d4af02.pdf
+  start_page: 27
+  title: Reassess Summary Factual Inconsistency Detection with Large Language Model
+- abstract: The proliferation of Large Language Models like ChatGPT has significantly
+    advanced language understanding and generation, impacting a broad spectrum of
+    applications. However, these models predominantly excel in text-based tasks, overlooking
+    the complexity of real-world multimodal information. This study introduces \textbf{MultiAPI},
+    a pioneering comprehensive large-scale API benchmark dataset aimed at expanding
+    LLMs' proficiency in multimodal contexts. Developed collaboratively through ChatGPT,
+    \textbf{MultiAPI} consists of 187 diverse API calls and 1,799 contextual prompts,
+    offering a unique platform evaluation of tool-augmented LLMs handling multimodal
+    tasks. Through comprehensive experiments, our findings reveal that while LLMs
+    demonstrate proficiency in API call decision-making, they face challenges in domain
+    identification, function selection, and argument generation. What's more, we surprisingly
+    notice that auxiliary context can actually impair the performance. An in-depth
+    error analysis paves the way for a new paradigm to address these challenges, suggesting
+    a potential direction for future LLM research.
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: xioliu@ucdavis.edu
+    first_name: Xiao
+    google_scholar_id: https://scholar.google.com/citations?user=E97kG9IAAAAJ&hl=en
+    institution: University of California, Davis
+    last_name: Liu
+    name: Xiao Liu
+    username: ~Xiao_Liu22
+  - dblp_id: https://dblp.org/pid/50/2581
+    emails: kyriezm1115@gmail.com
+    first_name: Jianfeng
+    last_name: Lin
+    name: Jianfeng Lin
+    username: ~Jianfeng_Lin1
+  - dblp_id: https://dblp.org/pid/10/239-1
+    emails: jiawei@ifmlab.org
+    first_name: Jiawei
+    google_scholar_id: https://scholar.google.com/citations?user=7AkZSJsAAAAJ&hl=en
+    homepage: http://jiaweizhang.net/
+    institution: University of California, Davis
+    last_name: Zhang
+    name: Jiawei Zhang
+    username: ~Jiawei_Zhang3
+  decision: Poster
+  end_page: 44
+  file: 10.pdf
+  id: 10
+  num_pages: 13
+  openreview_id: vHF6kGGGBk
+  pdf_file: ec162d96f539f6738acf99039104c08d47be36b8.pdf
+  start_page: 32
+  title: 'Beyond Text: Unveiling Multimodal Proficiency of Large Language Models with
+    MultiAPI Benchmark'
+- abstract: 'Scientific writing is a challenging task, particularly for novice researchers
+    who often rely on feedback from experienced peers. Recent work has primarily focused
+    on improving surface form and style rather than manuscript content. In this paper,
+    we propose a novel task: automated focused feedback generation for scientific
+    writing assistance. We present SWIF$^{2}$T: a Scientific WrIting Focused Feedback
+    Tool. It is designed to generate specific, actionable and coherent comments, which
+    identify weaknesses in a scientific paper and/or propose revisions to it. Our
+    approach consists of four components - planner, investigator, reviewer and controller
+    - leveraging multiple Large Language Models (LLMs) to implement them. We compile
+    a dataset of 300 peer reviews citing weaknesses in scientific papers and conduct
+    human evaluation. The results demonstrate the superiority in specificity, reading
+    comprehension, and overall helpfulness of SWIF$^{2}$T''s feedback compared to
+    other approaches. In our analysis, we also identified cases where automatically
+    generated reviews were judged better than human ones, suggesting opportunities
+    for integration of AI-generated feedback in scientific writing.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: ec806@cam.ac.uk
+    first_name: Eric
+    homepage: https://www.cst.cam.ac.uk/people/ec806
+    institution: University of Cambridge
+    last_name: Chamoun
+    name: Eric Chamoun
+    username: ~Eric_Chamoun1
+  - dblp_id: https://dblp.org/pid/186/7091
+    emails: mss84@cam.ac.uk
+    first_name: Michael
+    google_scholar_id: https://scholar.google.com/citations?user=z8YvWyEAAAAJ
+    homepage: http://michschli.github.io/
+    institution: Queen Mary, University of London
+    last_name: Schlichtkrull
+    middle_name: Sejr
+    name: Michael Sejr Schlichtkrull
+    username: ~Michael_Sejr_Schlichtkrull1
+  - dblp_id: https://dblp.org/pid/18/1071-1
+    emails: av308@cam.ac.uk
+    first_name: Andreas
+    google_scholar_id: https://scholar.google.es/citations?user=XjWnyM4AAAAJ&hl=en
+    homepage: http://andreasvlachos.github.io/
+    institution: University of Cambridge
+    last_name: Vlachos
+    name: Andreas Vlachos
+    orcid: https://orcid.org/0000-0003-2123-5071
+    semantic_scholar_id: https://www.semanticscholar.org/author/Andreas-Vlachos/2064056928
+    username: ~Andreas_Vlachos1
+  decision: Poster
+  file: 11.pdf
+  id: 11
+  openreview_id: Nm9bffebn9
+  pdf_file: c2913f2ff1da90e4154c5bb37889caff09f96f1e.pdf
+  title: Automated Focused Feedback Generation for Scientific Writing Assistance
+- abstract: 'Through the advent of pre-trained language models, there have been notable
+    advancements in abstractive summarization systems.
+
+    Simultaneously, a considerable number of novel methods for evaluating factual
+    consistency in abstractive summarization systems has been developed. But these
+    evaluation approaches incorporate substantial limitations, especially on refinement
+    and interpretability.
+
+    In this work, we propose highly effective and interpretable factual inconsistency
+    detection method FIZZ (Factual Inconsistency Detection by Zoom-in Summary and
+    Zoom-out Document) for abstractive summarization systems that is based on fine-grained
+    atomic facts decomposition.
+
+    Moreover, we align atomic facts decomposed from the summary with the source document
+    through adaptive granularity expansion.
+
+    These atomic facts represent a more fine-grained unit of information, facilitating
+    detailed understanding and interpretability of the summary''s factual inconsistency.
+
+    Experimental results demonstrate that our proposed factual consistency checking
+    system significantly outperforms existing systems.
+
+    We release the code at https://github.com/plm3332/FIZZ.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: plm3332@cau.ac.kr
+    first_name: Joonho
+    homepage: https://sites.google.com/view/cau-li
+    institution: Chung-Ang University
+    last_name: Yang
+    name: Joonho Yang
+    username: ~Joonho_Yang1
+  - dblp_id: https://dblp.org/pid/68/3020-2
+    emails: mysmilesh@gmail.com
+    first_name: Seunghyun
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=UpymOMwAAAAJ&view_op=list_works
+    homepage: https://david-yoon.github.io/
+    institution: Adobe Research
+    last_name: Yoon
+    name: Seunghyun Yoon
+    orcid: https://orcid.org/0000-0002-7262-3579
+    semantic_scholar_id: https://www.semanticscholar.org/author/Seunghyun-Yoon/144517919
+    username: ~Seunghyun_Yoon1
+  - emails: michael97k@cau.ac.kr
+    first_name: ByeongJeong
+    homepage: https://sites.google.com/view/cau-li
+    institution: Chung-Ang University
+    last_name: Kim
+    name: ByeongJeong Kim
+    username: ~ByeongJeong_Kim1
+  - dblp_id: https://dblp.org/pid/218/5402
+    emails: hwanheelee@cau.ac.kr
+    first_name: Hwanhee
+    google_scholar_id: https://scholar.google.com/citations?user=eRM8zHkAAAAJ&hl=en
+    homepage: https://hwanheelee1993.github.io/
+    institution: Chung-Ang University
+    last_name: Lee
+    name: Hwanhee Lee
+    semantic_scholar_id: https://www.semanticscholar.org/author/Hwanhee-Lee/2109339794
+    username: ~Hwanhee_Lee1
+  decision: Poster
+  file: 12.pdf
+  id: 12
+  openreview_id: geA5yT86RZ
+  pdf_file: c81807afa20a0832f78c26168a56becb3f8e9563.pdf
+  title: 'FIZZ: Factual Inconsistency Detection by Zoom-in Summary and Zoom-out Document'
+- abstract: 'This survey analyses how external knowledge can be integrated into language
+    models in the context of retrieval-augmentation.
+
+    The main goal of this work is to give an overview of: (1) Which external knowledge
+    can be augmented? (2) Given a knowledge source, how to retrieve from it and then
+    integrate the retrieved knowledge? To achieve this, we define and give a mathematical
+    formulation of retrieval-augmented knowledge integration (RAKI). We discuss retrieval
+    and integration techniques separately in detail, for each of the following knowledge
+    formats: knowledge graph, tabular and natural language.'
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/145/7790
+    emails: yuxuan.chen@dfki.de
+    first_name: Yuxuan
+    google_scholar_id: https://scholar.google.com/citations?user=dZ9iWhwAAAAJ&hl=en&oi=sra
+    homepage: https://www.dfki.de/en/web/about-us/employee/person/yuch02/
+    institution: "German Research Center for AI, German Research Center for AI and\
+      \ Freie Universit\xE4t Berlin"
+    last_name: Chen
+    name: Yuxuan Chen
+    orcid: https://orcid.org/0000-0003-1325-8388
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yuxuan-Chen/2137389523
+    username: ~Yuxuan_Chen5
+  - emails: danielroeder1997@gmail.com
+    first_name: Daniel
+    institution: German Research Center for AI
+    last_name: "R\xF6der"
+    name: "Daniel R\xF6der"
+    username: "~Daniel_R\xF6der1"
+  - dblp_id: https://dblp.org/pid/333/2488
+    emails: justus-jonas.erker@tu-darmstadt.de
+    first_name: Justus-Jonas
+    homepage: https://erker.ai
+    last_name: Erker
+    name: Justus-Jonas Erker
+    semantic_scholar_id: https://www.semanticscholar.org/author/Justus-Jonas-Erker/2186552416
+    username: ~Justus-Jonas_Erker1
+  - dblp_id: https://dblp.org/pid/75/5907
+    emails: leonhard.hennig@dfki.de
+    first_name: Leonhard
+    google_scholar_id: https://scholar.google.de/citations?user=V9G-FOoAAAAJ
+    institution: German Research Center for AI
+    last_name: Hennig
+    name: Leonhard Hennig
+    orcid: https://orcid.org/0000-0002-9594-2011
+    semantic_scholar_id: https://www.semanticscholar.org/author/Leonhard-Hennig/36943315
+    username: ~Leonhard_Hennig1
+  - dblp_id: https://dblp.org/pid/123/7263
+    emails: philippe.thomas@dfki.de
+    first_name: Philippe
+    google_scholar_id: https://scholar.google.de/citations?user=bdUBqlsAAAAJ&hl=de
+    institution: German Research Center for AI
+    last_name: Thomas
+    name: Philippe Thomas
+    orcid: https://orcid.org/0000-0001-9136-9660
+    username: ~Philippe_Thomas1
+  - dblp_id: https://dblp.org/pid/37/5849
+    emails: sebastian.moeller@tu-berlin.de
+    first_name: Sebastian
+    last_name: "M\xF6ller"
+    name: "Sebastian M\xF6ller"
+    username: "~Sebastian_M\xF6ller1"
+  - dblp_id: https://dblp.org/pid/31/7400
+    emails: roland.roller@dfki.de
+    first_name: Roland
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=MzyKw-DOYF4C
+    homepage: http://www.rolandroller.com
+    institution: German Research Center for AI
+    last_name: Roller
+    name: Roland Roller
+    username: ~Roland_Roller1
+  decision: Poster
+  end_page: 63
+  file: 13.pdf
+  id: 13
+  num_pages: 19
+  openreview_id: usVlDYJJU8
+  pdf_file: 5f7a0b12aaf1f3ff13458ea0ed2657f8c540681f.pdf
+  start_page: 45
+  title: 'Retrieval-Augmented Knowledge Integration into Language Models: A Survey'
+- abstract: 'While language models are increasingly more proficient at code generation,
+    they still frequently generate incorrect programs. Many of these programs are
+    obviously wrong, but others are more subtle and pass weaker correctness checks
+    such as being able to compile. In this work, we focus on these counterfeit samples:
+    programs sampled from a language model that 1) have a high enough log-probability
+    to be generated at a moderate temperature and 2) pass weak correctness checks.
+    Overall, we discover that most models have a very shallow understanding of counterfeits
+    through three clear failure modes. First, models mistakenly classify them as correct.
+    Second, models are worse at reasoning about the execution behaviour of counterfeits
+    and often predict their execution results as if they were correct. Third, when
+    asking models to fix counterfeits, the likelihood of a model successfully repairing
+    a counterfeit is often even lower than that of sampling a correct program from
+    scratch. Counterfeits also have very unexpected properties: first, counterfeit
+    programs for problems that are easier for a model to solve are not necessarily
+    easier to detect and only slightly easier to execute and repair. Second, counterfeits
+    from a given model are just as confusing to the model itself as they are to other
+    models. Finally, both strong and weak models are able to generate counterfeit
+    samples that equally challenge all models. In light of our findings, we recommend
+    that care and caution be taken when relying on models to understand their own
+    samples, especially when no external feedback is incorporated.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: https://dblp.org/pid/285/4734
+    emails: gua@mit.edu
+    first_name: Alex
+    google_scholar_id: https://scholar.google.com/citations?user=jRQtBp0AAAAJ&hl=en
+    homepage: https://minimario.github.io/
+    institution: Massachusetts Institute of Technology
+    last_name: Gu
+    name: Alex Gu
+    username: ~Alex_Gu1
+  - dblp_id: https://dblp.org/pid/132/0674
+    emails: wl678@cornell.edu
+    first_name: Wen-Ding
+    google_scholar_id: https://scholar.google.com/citations?user=2G2mr9QAAAAJ&hl=en
+    homepage: https://www.cs.cornell.edu/~wdli/
+    institution: Cornell University
+    last_name: Li
+    name: Wen-Ding Li
+    username: ~Wen-Ding_Li1
+  - emails: naman1205jain@gmail.com
+    first_name: Naman
+    google_scholar_id: https://scholar.google.com/citations?user=6oqV3v8AAAAJ&hl=en
+    homepage: https://naman-ntc.github.io/
+    institution: University of California, Berkeley
+    last_name: Jain
+    name: Naman Jain
+    semantic_scholar_id: https://www.semanticscholar.org/author/1646458461
+    username: ~Naman_Jain2
+  - dblp_id: https://dblp.org/pid/334/7669
+    emails: theoxo@mit.edu
+    first_name: Theo
+    google_scholar_id: https://scholar.google.com/citations?user=e7K3ZagAAAAJ
+    homepage: https://theoxo.xyz/
+    institution: Massachusetts Institute of Technology
+    last_name: Olausson
+    middle_name: X.
+    name: Theo X. Olausson
+    orcid: https://orcid.org/0000-0001-6653-2227
+    username: ~Theo_X._Olausson1
+  - emails: celine.y.lee@gmail.com
+    first_name: Celine
+    homepage: https://celine-lee.github.io
+    institution: Cornell University
+    last_name: Lee
+    name: Celine Lee
+    username: ~Celine_Lee1
+  - dblp_id: https://dblp.uni-trier.de/pid/04/418.html
+    emails: ksen@berkeley.edu
+    first_name: Koushik
+    google_scholar_id: https://scholar.google.com/citations?user=Vn3L_ioAAAAJ&hl=en&oi=ao
+    homepage: https://people.eecs.berkeley.edu/~ksen/
+    institution: UC Berkeley, University of California, Berkeley
+    last_name: Sen
+    name: Koushik Sen
+    username: ~Koushik_Sen2
+  - dblp_id: https://dblp.org/pid/95/6919
+    emails: asolar@csail.mit.edu
+    first_name: Armando
+    google_scholar_id: https://scholar.google.com.tw/citations?user=8BX3BokAAAAJ
+    homepage: https://people.csail.mit.edu/asolar/
+    institution: Massachusetts Institute of Technology
+    last_name: Solar-Lezama
+    name: Armando Solar-Lezama
+    username: ~Armando_Solar-Lezama1
+  decision: Poster
+  file: 14.pdf
+  id: 14
+  openreview_id: p9HkO3S6DI
+  pdf_file: 656e3ba4c23ca41308d0b03bb764c48f7c0674b4.pdf
+  title: 'The Counterfeit Conundrum: Can Code Language Models Grasp the Nuances of
+    Their Incorrect Generations?'
+- abstract: "Efficient knowledge editing of large language models is crucial for replacing\
+    \ obsolete information or incorporating specialized knowledge on a large scale.\
+    \ \nHowever, previous methods implicitly assume that knowledge is localized and\
+    \ isolated within the model, an assumption that oversimplifies the interconnected\
+    \ nature of model knowledge.\nThe premise of localization results in an incomplete\
+    \ knowledge editing, whereas an isolated assumption may impair both other knowledge\
+    \ and general abilities.\nIt introduces instability to the performance of the\
+    \ knowledge editing method.\nTo transcend these assumptions, we introduce StableKE,\
+    \ a method adopts a novel perspective based on knowledge augmentation rather than\
+    \ knowledge localization.\nTo overcome the expense of human labeling, StableKE\
+    \ integrates two automated knowledge augmentation strategies: Semantic Paraphrase\
+    \ Enhancement strategy, which diversifies knowledge descriptions to facilitate\
+    \ the teaching of new information to the model, and Contextual Description Enrichment\
+    \ strategy, expanding the surrounding knowledge to prevent the forgetting of related\
+    \ information.\nStableKE surpasses other knowledge editing methods, demonstrating\
+    \ stability both edited knowledge and multi-hop knowledge, while also preserving\
+    \ unrelated knowledge and general abilities. \nMoreover, StableKE can edit knowledge\
+    \ on ChatGPT."
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/235/4940.html
+    emails: weizihao22z@ict.ac.cn
+    first_name: Zihao
+    google_scholar_id: https://scholar.google.com/citations?user=cYUdH_4AAAAJ&hl=zh-CN
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Wei
+    name: Zihao Wei
+    username: ~Zihao_Wei2
+  - dblp_id: https://dblp.org/pid/37/11078
+    emails: pangliang@ict.ac.cn
+    first_name: Liang
+    google_scholar_id: https://scholar.google.com/citations?user=1dgQHBkAAAAJ&hl=en
+    homepage: https://pl8787.github.io/
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Pang
+    name: Liang Pang
+    orcid: https://orcid.org/0000-0003-1161-8546
+    semantic_scholar_id: https://www.semanticscholar.org/author/Liang-Pang/48537499
+    username: ~Liang_Pang1
+  - dblp_id: https://dblp.org/pid/260/2132
+    emails: dinghanxing18s@ict.ac.cn
+    first_name: Hanxing
+    last_name: Ding
+    name: Hanxing Ding
+    username: ~Hanxing_Ding1
+  - emails: djc123234@163.com
+    first_name: Jingcheng
+    google_scholar_id: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=JBkt6EYAAAAJ
+    homepage: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=JBkt6EYAAAAJ
+    last_name: Deng
+    name: Jingcheng Deng
+    username: ~Jingcheng_Deng1
+  - dblp_id: https://dblp.org/pid/98/917
+    emails: shenhuawei@ict.ac.cn
+    first_name: Huawei
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Shen
+    name: Huawei Shen
+    username: ~Huawei_Shen1
+  - dblp_id: https://dblp.org/pid/44/912
+    emails: cxq@ict.ac.cn
+    first_name: Xueqi
+    homepage: http://www.ict.cas.cn/sourcedb_2018_ict_cas/cn/jssrck/200909/t20090917_2496598.html
+    institution: ', Chinese Academy of Sciences'
+    last_name: Cheng
+    name: Xueqi Cheng
+    username: ~Xueqi_Cheng1
+  decision: Poster
+  file: 17.pdf
+  id: 17
+  openreview_id: rbUJvLY9Hw
+  pdf_file: 731d614645ae3d664a3078e7c0a51f79dae020da.pdf
+  title: Stable Knowledge Editing in Large Language Models
+- abstract: Long-form generations from large language models (LLMs) contain a mix
+    of factual and non-factual claims, making evaluating factuality difficult.To evaluate
+    *factual precision* of long-form generations in a more fine-grained way, prior
+    works propose to decompose long-form generations into multiple verifiable facts
+    and verify those facts independently. The factuality of the generation is the
+    proportion of verifiable facts among all the facts.Such methods assume that combining
+    factual claims forms a factual paragraph.This paper shows that the assumption
+    can be violated.We show that LLMs can generate paragraphs that contain verifiable
+    facts, but the facts are combined to form a non-factual paragraph due to entity
+    ambiguity.We further reveal that existing factual precision metrics, including
+    FActScore and citation recall, cannot properly evaluate the factuality of these
+    non-factual paragraphs.To address this, we introduce an enhanced metric, **D-FActScore**,
+    specifically designed for content with ambiguous entities.We evaluate the D-FActScores
+    of people biographies generated by retrieval-augmented LLMs.We show that D-FActScore
+    can better assess the factuality of paragraphs with entity ambiguity than FActScore.We
+    also find that four widely used open-source LLMs tend to mix information of distinct
+    entities to form non-factual paragraphs.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: https://dblp.org/pid/276/0431
+    emails: dcml0714@gmail.com
+    first_name: Cheng-Han
+    google_scholar_id: https://scholar.google.com.tw/citations?user=_DYQvPYAAAAJ
+    homepage: https://github.com/d223302
+    last_name: Chiang
+    name: Cheng-Han Chiang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Cheng-Han-Chiang/1992777064
+    username: ~Cheng-Han_Chiang1
+  - dblp_id: https://dblp.org/pid/81/8056
+    emails: tlkagkb93901106@gmail.com
+    first_name: Hung-yi
+    google_scholar_id: https://scholar.google.com/citations?user=DxLO11IAAAAJ&hl=en
+    homepage: https://speech.ee.ntu.edu.tw/~hylee/index.html
+    institution: National Taiwan University
+    last_name: Lee
+    name: Hung-yi Lee
+    semantic_scholar_id: https://www.semanticscholar.org/author/Hung-yi-Lee/1706104
+    username: ~Hung-yi_Lee2
+  decision: Oral
+  file: 19.pdf
+  id: 19
+  openreview_id: lPFaer5saF
+  pdf_file: 6a38e5ea389caa529ef9d9665e1d812a6af1059c.pdf
+  title: 'Merging Facts, Crafting Fallacies: Evaluating the Contradictory Nature of
+    Aggregated Factual Claims in Long-Form Generations'
+- abstract: "Large Language Models (LLMs) have revolutionized text generation across\
+    \ diverse domains, showcasing an ability to mimic human-like text with remarkable\
+    \ accuracy. Yet, these models frequently encounter a significant hurdle: producing\
+    \ hallucinations, a flaw particularly detrimental in the healthcare domain where\
+    \ precision is crucial. In this paper, we introduce ClinicalRAG, a novel multi-agent\
+    \ pipeline to rectify this issue by incorporating heterogeneous medical knowledge\u2014\
+    both structured and unstructured\u2014into LLMs to bolster diagnosis accuracy.\
+    \ ClinicalRAG can extract related medical entities from user inputs and dynamically\
+    \ integrate relevant medical knowledge during the text generation process. Comparative\
+    \ analyses reveal that ClinicalRAG significantly outperforms knowledge-deficient\
+    \ methods, offering enhanced reliability in clinical decision support. This advancement\
+    \ marks a pivotal proof-of-concept step towards mitigating misinformation risks\
+    \ in healthcare applications of LLMs."
+  archival: true
+  attributes:
+    paper_type: short
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/299/1429
+    emails: yxlu0613@gmail.com
+    first_name: Yuxing
+    google_scholar_id: https://scholar.google.com/citations?hl=zh-CN&user=_LoR2f8AAAAJ
+    homepage: http://yuxinglu613.github.io
+    last_name: Lu
+    name: Yuxing Lu
+    orcid: https://orcid.org/0000-0002-8207-4411
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yuxing-Lu/2220675861
+    username: ~Yuxing_Lu1
+  - emails: 202221007000@mail.scut.edu.cn
+    first_name: Xukai
+    google_scholar_id: https://scholar.google.com/citations?user=Ko8zceoAAAAJ&hl=en&oi=ao
+    last_name: Zhao
+    name: Xukai Zhao
+    username: ~Xukai_Zhao2
+  - dblp_id: https://dblp.org/pid/166/6003
+    emails: wangjinzhuo@pku.edu.cn
+    first_name: Jinzhuo
+    institution: Peking University
+    last_name: Wang
+    name: Jinzhuo Wang
+    username: ~Jinzhuo_Wang1
+  decision: Poster
+  end_page: 68
+  file: 20.pdf
+  id: 20
+  num_pages: 5
+  openreview_id: aZetwo84PV
+  pdf_file: 4e8e553d31ca3365cc7175cbedd0755415165e60.pdf
+  start_page: 64
+  title: 'ClinicalRAG: Enhancing Clinical Decision Support through Heterogeneous Knowledge
+    Retrieval'
+- abstract: Recently, there has been growing interest within the community regarding
+    whether large language models are capable of planning or executing plans. However,
+    most prior studies use LLMs to generate high-level plans for simplified scenarios
+    lacking linguistic complexity and domain diversity, limiting analysis of their
+    planning abilities. These setups constrain evaluation methods (e.g., predefined
+    action space), architectural choices (e.g., only generative models), and overlook
+    the linguistic nuances essential for realistic analysis. To tackle this, we present
+    PARADISE, an abductive reasoning task using Q&A format on practical procedural
+    text sourced from wikiHow. It involves tip and warning inference tasks directly
+    associated with goals, excluding intermediary steps, with the aim of testing the
+    ability of the models to infer implicit knowledge of the plan solely from the
+    given goal. Our experiments, utilizing fine-tuned language models and zero-shot
+    prompting, reveal the effectiveness of task-specific small models over large language
+    models in most scenarios. Despite advancements, all models fall short of human
+    performance. Notably, our analysis uncovers intriguing insights, such as variations
+    in model behavior with dropped keywords, struggles of BERT-family and GPT-4 with
+    physical and abstract goals, and the proposed tasks offering valuable prior knowledge
+    for other unseen procedural tasks. The PARADISE dataset and associated resources
+    are publicly available for further research exploration with https://anonymous.4open.science/r/paradise-53BD/README.md.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: ardauzunogluarda@gmail.com
+    first_name: Arda
+    homepage: https://github.com/ardauzunoglu
+    institution: KUIS AI Lab
+    last_name: Uzunoglu
+    name: Arda Uzunoglu
+    username: ~Arda_Uzunoglu1
+  - emails: fattah.safa@gmail.com
+    first_name: Abdulfattah
+    last_name: Safa
+    name: Abdulfattah Safa
+    orcid: https://orcid.org/0000-0001-7673-4885
+    username: ~Abdulfattah_Safa1
+  - dblp_id: https://dblp.org/pid/216/7164
+    emails: goezde.guel@gmail.com
+    first_name: "G\xF6zde"
+    google_scholar_id: https://scholar.google.com.tr/citations?user=KdpjpPkAAAAJ&hl=tr
+    homepage: https://gozdesahin.github.io/
+    institution: "Ko\xE7 University"
+    last_name: "\u015Eahin"
+    middle_name: "G\xFCl"
+    name: "G\xF6zde G\xFCl \u015Eahin"
+    orcid: https://orcid.org/0000-0002-0332-1657
+    semantic_scholar_id: https://www.semanticscholar.org/author/G%C3%B6zde-G%C3%BCl-Sahin/7655033
+    username: "~G\xF6zde_G\xFCl_\u015Eahin1"
+  decision: Poster
+  file: 21.pdf
+  id: 21
+  openreview_id: ABRWG2YdbC
+  pdf_file: aa9d86dce53f3924aa9fa05c59d9bbee7d1b0d84.pdf
+  title: 'PARADISE: Evaluating Implicit Planning Skills of Language Models with Procedural
+    Warnings and Tips Dataset'
+- abstract: While self-correction has shown promise in improving LLM outputs in terms
+    of style and quality (e.g. Chen et al., 2023b; Madaan et al., 2023), recent attempts
+    to self-correct logical or reasoning errors often cause correct answers to become
+    incorrect, resulting in worse performances overall (Huang et al., 2023). In this
+    paper, we show that poor self-correction performance stems from LLMs' inability
+    to find logical mistakes, rather than their ability to correct a known mistake.
+    Firstly, we benchmark several state-of-the-art LLMs on their mistake-finding ability
+    and demonstrate that they generally struggle with the task, even in highly objective,
+    unambiguous cases. Secondly, we test the correction abilities of LLMs -- separately
+    from mistake finding -- using a backtracking setup that feeds ground truth mistake
+    location information to the model. We show that this boosts downstream task performance
+    across our 5 reasoning tasks, indicating that LLMs' correction abilities are robust.
+    Finally, we show that it is possible to obtain mistake location information without
+    ground truth labels or in-domain training data. We train a small classifier with
+    out-of-domain data, which exhibits stronger mistake-finding performance than prompting
+    a large model. We release our dataset of LLM-generated logical mistakes, BIG-Bench
+    Mistake, to enable further research into locating LLM reasoning mistakes.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: gladys.tyen@cl.cam.ac.uk
+    first_name: Gladys
+    homepage: https://www.cl.cam.ac.uk/~whgt2/
+    institution: University of Cambridge
+    last_name: Tyen
+    name: Gladys Tyen
+    username: ~Gladys_Tyen1
+  - emails: hassan.mansoor@gmail.com
+    first_name: Hassan
+    homepage: https://www.linkedin.com/in/hassan-mansoor-6938364/
+    institution: Google
+    last_name: Mansoor
+    name: Hassan Mansoor
+    username: ~Hassan_Mansoor1
+  - dblp_id: https://dblp.org/pid/199/7020
+    emails: victor.carbune@gmail.com
+    first_name: Victor
+    google_scholar_id: https://scholar.google.ch/citations?user=35djUQYAAAAJ
+    homepage: https://ai.google/research/people/104909
+    institution: Google
+    last_name: Carbune
+    name: Victor Carbune
+    username: ~Victor_Carbune1
+  - emails: chenfeif@google.com
+    first_name: Peter
+    institution: Google
+    last_name: Chen
+    name: Peter Chen
+    username: ~Peter_Chen6
+  - emails: tonymak@google.com
+    first_name: Tony
+    homepage: https://www.linkedin.com/in/tony-mak-06616254
+    institution: Google
+    last_name: Mak
+    name: Tony Mak
+    username: ~Tony_Mak1
+  decision: Poster
+  file: 23.pdf
+  id: 23
+  openreview_id: 0Bttdm1d9N
+  pdf_file: e4d45181edb4882d66551793e8342979a9fce7c3.pdf
+  title: LLMs cannot find reasoning errors, but can correct them given the error location
+- abstract: The integration of retrieved passages and large language models (LLMs),
+    such as ChatGPTs, has significantly contributed to improving open-domain question
+    answering. However, there is still a lack of exploration regarding the optimal
+    approach for incorporating retrieved passages into the answer generation process.
+    This paper aims to fill this gap by investigating different methods of combining
+    retrieved passages with LLMs to enhance answer generation. We begin by examining
+    the limitations of a commonly-used concatenation approach. Surprisingly, this
+    approach often results in generating ``unknown'' outputs, even when the correct
+    document is among the top-$k$ retrieved passages. To address this issue, we explore
+    four alternative strategies for integrating the retrieved passages with the LLMs.
+    These strategies include two single-round methods that utilize chain-of-thought
+    reasoning and two multi-round strategies that incorporate feedback loops. Through
+    comprehensive analyses and experiments, we provide insightful observations on
+    how to effectively leverage retrieved passages to enhance the answer generation
+    capability of LLMs. On three open-domain question answering datesets, NQ, TriviaQA
+    and SQuAD, our multi-round approaches outperform traditional concatenation approach,
+    achieving over a $10\%$ improvement in answer EM.
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/96/2615-6
+    emails: yeliu@salesforce.com
+    first_name: Ye
+    google_scholar_id: https://scholar.google.com/citations?user=QMKD6YMAAAAJ&hl=en
+    institution: SalesForce.com
+    last_name: Liu
+    name: Ye Liu
+    username: ~Ye_Liu4
+  - dblp_id: https://dblp.org/pid/83/8545
+    emails: memray0@gmail.com
+    first_name: Rui
+    google_scholar_id: https://scholar.google.com/citations?user=s6h8L_UAAAAJ&hl=en
+    homepage: http://memray.me
+    institution: SalesForce Research
+    last_name: Meng
+    name: Rui Meng
+    orcid: https://orcid.org/0000-0001-5583-4924
+    semantic_scholar_id: https://www.semanticscholar.org/author/Rui-Meng/2949282
+    username: ~Rui_Meng1
+  - dblp_id: https://dblp.org/pid/234/8670
+    emails: meghanamoorthy@gmail.com
+    first_name: Meghana Moorthy
+    google_scholar_id: https://scholar.google.com/citations?user=xX1fYq0AAAAJ&hl=en
+    homepage: https://github.com/meghu2791
+    institution: Salesforce Research
+    last_name: Bhat
+    name: Meghana Moorthy Bhat
+    semantic_scholar_id: https://www.semanticscholar.org/author/Meghana-Moorthy-Bhat/48648832
+    username: ~Meghana_Moorthy_Bhat1
+  - dblp_id: https://dblp.org/pid/62/2078
+    emails: sjoty@salesforce.com
+    first_name: Shafiq
+    google_scholar_id: https://scholar.google.com/citations?user=hR249csAAAAJ&hl=en
+    homepage: https://raihanjoty.github.io/
+    institution: SalesForce.com and Nanyang Technological University
+    last_name: Joty
+    name: Shafiq Joty
+    username: ~Shafiq_Joty1
+  - dblp_id: https://dblp.org/pid/80/7282
+    emails: cmxiong.lhi@gmail.com
+    first_name: Caiming
+    google_scholar_id: https://scholar.google.com/citations?user=vaSdahkAAAAJ&hl=en
+    homepage: http://cmxiong.com/
+    institution: Salesforce Research
+    last_name: Xiong
+    name: Caiming Xiong
+    username: ~Caiming_Xiong1
+  - dblp_id: https://dblp.org/pid/72/8614
+    emails: zybzmhhj@gmail.com
+    first_name: Yingbo
+    google_scholar_id: https://scholar.google.com/citations?user=H_6RQ7oAAAAJ&hl=en
+    institution: Salesforce Research
+    last_name: Zhou
+    name: Yingbo Zhou
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yingbo-Zhou/34872128
+    username: ~Yingbo_Zhou1
+  - emails: semihyavuz9091@gmail.com
+    first_name: Semih
+    google_scholar_id: https://scholar.google.com/citations?user=krh3p8AAAAAJ&hl=en
+    institution: SalesForce.com
+    last_name: Yavuz
+    name: Semih Yavuz
+    username: ~Semih_Yavuz1
+  decision: Poster
+  end_page: 82
+  file: 24.pdf
+  id: 24
+  num_pages: 14
+  openreview_id: iMhYoJ5KZQ
+  pdf_file: b2e87f85aaff8db1735792d074e4f0968a426979.pdf
+  start_page: 69
+  title: Modeling Uncertainty and Using Post-fusion as Fallback Improves Retrieval
+    Augmented Generation with LLMs
+- abstract: "Recent knowledge editing methods have primarily focused on modifying\
+    \ structured knowledge in large language models, heavily relying on the assumption\
+    \ that structured knowledge is stored as key-value pairs locally in MLP layers\
+    \ or specific neurons. However, this task setting overlooks the fact that a significant\
+    \ portion of real-world knowledge is stored in an unstructured format, characterized\
+    \ by long-form content, noise, and a complex yet comprehensive nature.\nThe \"\
+    knowledge locating\" and \"term-driven optimization\" techniques conducted from\
+    \ the assumption used in previous methods (e.g., MEMIT) are ill-suited for unstructured\
+    \ knowledge. \nTo address these challenges, we propose a novel unstructured knowledge\
+    \ editing method, namely UnKE, which extends previous assumptions in the layer\
+    \ dimension and token dimension.\nFirstly, in the layer dimension, we discard\
+    \ the \"knowledge locating\" step and treat first few layers as the key, which\
+    \ expand knowledge storage through layers to break the \"knowledge stored locally\"\
+    \ assumption. \nNext, we replace \"term-driven optimization\" with \"cause-driven\
+    \ optimization\" across all inputted tokens in the token dimension, directly optimizing\
+    \ the last layer of the key generator to perform editing to generate the required\
+    \ key vectors.\nBy utilizing key-value pairs at the layer level, UnKE effectively\
+    \ represents and edits complex and comprehensive unstructured knowledge, leveraging\
+    \ the potential of both the MLP and attention layers.\nResults on newly proposed\
+    \ unstructure knowledge editing dataset (UnKEBench) and traditional structured\
+    \ datasets demonstrate that UnKE achieves remarkable performance, surpassing strong\
+    \ baselines."
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: djc123234@163.com
+    first_name: Jingcheng
+    google_scholar_id: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=JBkt6EYAAAAJ
+    homepage: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=JBkt6EYAAAAJ
+    last_name: Deng
+    name: Jingcheng Deng
+    username: ~Jingcheng_Deng1
+  - dblp_id: https://dblp.org/pid/235/4940.html
+    emails: weizihao22z@ict.ac.cn
+    first_name: Zihao
+    google_scholar_id: https://scholar.google.com/citations?user=cYUdH_4AAAAJ&hl=zh-CN
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Wei
+    name: Zihao Wei
+    username: ~Zihao_Wei2
+  - dblp_id: https://dblp.org/pid/37/11078
+    emails: pangliang@ict.ac.cn
+    first_name: Liang
+    google_scholar_id: https://scholar.google.com/citations?user=1dgQHBkAAAAJ&hl=en
+    homepage: https://pl8787.github.io/
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Pang
+    name: Liang Pang
+    orcid: https://orcid.org/0000-0003-1161-8546
+    semantic_scholar_id: https://www.semanticscholar.org/author/Liang-Pang/48537499
+    username: ~Liang_Pang1
+  - dblp_id: https://dblp.org/pid/260/2132
+    emails: dinghanxing18s@ict.ac.cn
+    first_name: Hanxing
+    last_name: Ding
+    name: Hanxing Ding
+    username: ~Hanxing_Ding1
+  - dblp_id: https://dblp.org/pid/98/917
+    emails: shenhuawei@ict.ac.cn
+    first_name: Huawei
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Shen
+    name: Huawei Shen
+    username: ~Huawei_Shen1
+  - dblp_id: https://dblp.org/pid/44/912
+    emails: cxq@ict.ac.cn
+    first_name: Xueqi
+    homepage: http://www.ict.cas.cn/sourcedb_2018_ict_cas/cn/jssrck/200909/t20090917_2496598.html
+    institution: ', Chinese Academy of Sciences'
+    last_name: Cheng
+    name: Xueqi Cheng
+    username: ~Xueqi_Cheng1
+  decision: Poster
+  file: 25.pdf
+  id: 25
+  openreview_id: 6j96vPaX6J
+  pdf_file: 7bfb75fd309c87b217d59f5fbdef22eceba3132c.pdf
+  title: 'UnKE: Unstructured Knowledge Editing in Large Language Models'
+- abstract: Conceptual spaces represent entities in terms of their primitive semantic
+    features. Such representations are highly valuable but they are notoriously difficult
+    to learn, especially when it comes to modelling perceptual and subjective features.
+    Distilling conceptual spaces from Large Language Models (LLMs) has recently emerged
+    as a promising strategy, but existing work has been limited to probing pre-trained
+    LLMs using relatively simple zero-shot strategies. We focus in particular on the
+    task of ranking entities according to a given conceptual space dimension. Unfortunately,
+    we cannot directly fine-tune LLMs on this task, because ground truth rankings
+    for conceptual space dimensions are rare. We therefore use more readily available
+    features as training data and analyse whether the ranking capabilities of the
+    resulting models transfer to perceptual and subjective features. We find that
+    this is indeed the case, to some extent, but having at least some perceptual and
+    subjective features in the training data seems essential for achieving the best
+    results.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: niteshroyal.30@gmail.com
+    first_name: Nitesh
+    google_scholar_id: https://scholar.google.com/citations?user=nq4neTsAAAAJ&hl=en
+    homepage: https://sites.google.com/view/niteshroyal
+    institution: Cardiff University
+    last_name: Kumar
+    name: Nitesh Kumar
+    username: ~Nitesh_Kumar1
+  - emails: chatterjeeu@cardiff.ac.uk
+    first_name: Usashi
+    google_scholar_id: https://scholar.google.co.in/citations?user=ftJvvHwAAAAJ&hl=en
+    institution: Cardiff University
+    last_name: Chatterjee
+    name: Usashi Chatterjee
+    username: ~Usashi_Chatterjee1
+  - dblp_id: https://dblp.org/pid/29/3972.html
+    emails: schockaerts1@cardiff.ac.uk
+    first_name: Steven
+    google_scholar_id: https://scholar.google.co.uk/citations?user=hNCN09AAAAAJ&hl=en
+    homepage: https://www.cardiff.ac.uk/people/view/133772-schockaert-steven
+    institution: Cardiff University
+    last_name: Schockaert
+    name: Steven Schockaert
+    semantic_scholar_id: https://www.semanticscholar.org/author/S.-Schockaert/2265382
+    username: ~Steven_Schockaert2
+  decision: Poster
+  file: 26.pdf
+  id: 26
+  openreview_id: uRL0fOGKFn
+  pdf_file: 7405ed2dc78eb95c03b672c16ab647254f557eea.pdf
+  title: 'Ranking Entities along Conceptual Space Dimensions with LLMs: An Analysis
+    of Fine-Tuning Strategies'
+- abstract: 'Hypothetical induction is recognized as the main reasoning type when
+    scientists make observations about the world and try to propose hypotheses to
+    explain those observations. Past research on hypothetical induction is under a
+    constrained setting: (1) the observation annotations in the dataset are carefully
+    manually handpicked sentences (resulting in a close-domain setting); and (2) the
+    ground truth hypotheses are mostly commonsense knowledge, making the task less
+    challenging. In this work, we tackle these problems by proposing the first dataset
+    for social science academic hypotheses discovery, with the final goal to create
+    systems that automatically generate valid, novel, and helpful scientific hypotheses,
+    given only a pile of raw web corpus. Unlike previous settings, the new dataset
+    requires (1) using open-domain data (raw web corpus) as observations; and (2)
+    proposing hypotheses even new to humanity. A multi-module framework is developed
+    for the task, including three different feedback mechanisms to boost performance,
+    which exhibits superior performance in terms of both GPT-4 based and expert-based
+    evaluation. To the best of our knowledge, this is the first work showing that
+    LLMs are able to generate novel (''''not existing in literature'''') and valid
+    (''''reflecting reality'''') scientific hypotheses.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: zonglin.yang@ntu.edu.sg
+    first_name: Zonglin
+    google_scholar_id: https://scholar.google.com/citations?user=cTTRbeMAAAAJ&hl=en&oi=ao
+    homepage: https://zongliny.github.io/
+    last_name: Yang
+    name: Zonglin Yang
+    orcid: https://orcid.org/0000-0002-8059-6654
+    semantic_scholar_id: https://www.semanticscholar.org/author/Zonglin-Yang/2124477940
+    username: ~Zonglin_Yang1
+  - dblp_id: https://dblp.org/pid/200/8114
+    emails: xinya.du@utdallas.edu
+    first_name: Xinya
+    google_scholar_id: https://scholar.google.com/citations?user=R-lKQqkAAAAJ&hl=en
+    homepage: https://xinyadu.github.io
+    institution: University of Texas at Dallas
+    last_name: Du
+    name: Xinya Du
+    semantic_scholar_id: https://www.semanticscholar.org/author/X.-Du/13728923
+    username: ~Xinya_Du1
+  - emails: junxian001@e.ntu.edu.sg
+    first_name: Junxian
+    google_scholar_id: https://scholar.google.com/citations?user=EaEom9YAAAAJ&hl=zh-CN
+    institution: Nanyang Technological University
+    last_name: LI
+    name: JUNXIAN LI
+    orcid: https://orcid.org/0009-0000-8689-6829
+    username: ~JUNXIAN_LI2
+  - emails: jie.jay.zheng@gmail.com
+    first_name: Jie
+    last_name: Zheng
+    name: Jie Zheng
+    semantic_scholar_id: https://www.semanticscholar.org/author/Jie-Zheng/2237998834
+    username: ~Jie_Zheng6
+  - dblp_id: https://dblp.org/pid/116/4904
+    emails: sporia@sutd.edu.sg
+    first_name: Soujanya
+    google_scholar_id: https://scholar.google.co.in/citations?user=oS6gRc4AAAAJ&hl=en
+    homepage: https://soujanyaporia.github.io
+    institution: Singapore University of Technology and Design
+    last_name: Poria
+    name: Soujanya Poria
+    username: ~Soujanya_Poria1
+  - dblp_id: https://dblp.org/pid/80/7421
+    emails: erik@sentic.net
+    first_name: Erik
+    google_scholar_id: https://scholar.google.com/citations?user=ilSYpW0AAAAJ
+    homepage: https://sentic.net/erikcambria/
+    institution: Nanyang Technological University
+    last_name: Cambria
+    name: Erik Cambria
+    orcid: https://orcid.org/0000-0002-3030-1280
+    semantic_scholar_id: https://www.semanticscholar.org/author/E.-Cambria/49943757
+    username: ~Erik_Cambria1
+  decision: Poster
+  file: 27.pdf
+  id: 27
+  openreview_id: KqAmL5H0Y0
+  pdf_file: 6bf8f2c76da3eee7377acb474561aa708f8867e2.pdf
+  title: Large Language Models for Automated Open-domain Scientific Hypotheses Discovery
+- abstract: Large language models (LLMs) are pre-trained on enormous amounts of text
+    data and show acclaimed success in knowledge representation. However, there are
+    two bottlenecks with this approach. (1) Pre-training data cannot be regularly
+    updated once the models are deployed, and it is not very fruitful if the model
+    cannot represent updated knowledge. (2) The consistently increasing size and computational
+    resources make it difficult for non-commercial and individual researchers to fine-tune
+    and scale these language models. Major LLMs with external knowledge are also proprietary.
+    In this paper, we propose AcKnowledge, a framework wrapped around a small, non-pre-trained
+    language model for an open-domain question-answering (QA) experiment. AcKnowledge
+    learns relevant knowledge from the internet via meta-learning based on user questions,
+    and re-learns from user feedback if knowledge is misrepresented. Our efficient
+    knowledge representation framework avoids pre-training overhead while enabling
+    updated information. Benchmarking shows competitive performance against similarly
+    sized state-of-the-art (SoTA) LLMs on gold standard QA datasets, demonstrating
+    the potential of integrating internet search and user feedback for improved performance
+    and generalizability.
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: sourav\_phd21@iiitkalyani.ac.in
+    first_name: Sourav
+    google_scholar_id: https://scholar.google.com/citations?user=iroUlf0AAAAJ&hl=en
+    homepage: https://sites.google.com/view/souravd-me/home?authuser=1
+    last_name: Das
+    name: Sourav Das
+    username: ~Sourav_Das3
+  - emails: sanjayc@iiitkalyani.ac.in
+    first_name: Sanjay
+    google_scholar_id: https://scholar.google.com/citations?user=7G3OjHgAAAAJ&hl=en&oi=ao
+    homepage: https://iiitkalyani.ac.in/php/facultymainpage/sc.html
+    last_name: Chatterji
+    name: Sanjay Chatterji
+    username: ~Sanjay_Chatterji1
+  - dblp_id: https://dblp.org/pid/51/8909.html
+    emails: imon@iiitkalyani.ac.in
+    first_name: Imon
+    google_scholar_id: https://scholar.google.com/citations?user=3xcXNz0AAAAJ&hl=fr
+    homepage: https://iiitkalyani.ac.in/php/facultymainpage/im.html
+    last_name: Mukherjee
+    name: Imon Mukherjee
+    orcid: https://orcid.org/0000-0002-8598-148X
+    username: ~Imon_Mukherjee1
+  decision: Oral
+  end_page: 95
+  file: 28.pdf
+  id: 28
+  num_pages: 13
+  openreview_id: yNAxnO0Vx4
+  pdf_file: d60f510fe054b942bd1d14fea77399c76c2e164f.pdf
+  start_page: 83
+  title: 'AcKnowledge: Acquired Knowledge Representation by Small Language Model Without
+    Pre-training'
+- abstract: 'Powerful LLMs like ChatGPT are adopted rapidly for a wide array of tasks,
+    but their limitations in domain-specific areas become apparent, particularly when
+    prompted to recite facts. This is critical especially for knowledge workers, who
+    are adopting LLM-based tools rapidly.
+
+    While there are various techniques that can help ingest knowledge into LLMs such
+    as instruction tuning and alignment, most have disadvantages. We examine the impact
+    of prominent training techniques on LLMs'' knowledge accuracy using a knowledge-dense
+    dataset that we curate from r/AskHistorians, a rich source of historical knowledge.
+    We evaluate the impact of different models sizes from 1.3B to 7B parameters and
+    other factors such as LoRA adapters, quantization, overfitting, and the inclusion
+    of Reddit data in pretraining.
+
+    In addition, we measure linguistic metrics and human and LLM-based preference.
+    Our results suggest that pretraining and model size have a much stronger effect
+    on knowledge accuracy than continued pretraining -- unless the model is overfit
+    to the tested knowledge.
+
+    Fine-tuning on our Reddit dataset introduces less complex, but slightly more toxic
+    language. Our study explores the challenges of injecting domain-specific datasets
+    into LLMs and has implications for practitioners, e.g., when LLMs are to be fine-tuned
+    with a company''s datasets.'
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: jv@lewe-hoffbauer.de
+    first_name: Jan
+    homepage: https://jvhoffbauer.com
+    last_name: Hoffbauer
+    middle_name: Vincent
+    name: Jan Vincent Hoffbauer
+    username: ~Jan_Vincent_Hoffbauer1
+  - emails: sylwester.sawicki@student.hpi.de
+    first_name: Sylwester
+    institution: "Universit\xE4t Potsdam"
+    last_name: Sawicki
+    name: Sylwester Sawicki
+    username: ~Sylwester_Sawicki1
+  - emails: marc.ulrich@uni-potsdam.de
+    first_name: Marc
+    institution: "Universit\xE4t Potsdam"
+    last_name: Ulrich
+    middle_name: Lenard
+    name: Marc Lenard Ulrich
+    username: ~Marc_Lenard_Ulrich1
+  - emails: tolga.buz@hpi.de
+    first_name: Tolga
+    google_scholar_id: https://scholar.google.de/citations?user=w5kpxzwAAAAJ
+    institution: Kearney
+    last_name: Buz
+    name: Tolga Buz
+    orcid: https://orcid.org/0000-0001-9790-0790
+    username: ~Tolga_Buz1
+  - dblp_id: https://dblp.org/pid/314/6525.html
+    emails: konstantin.dobler@hpi.de
+    first_name: Konstantin
+    google_scholar_id: https://scholar.google.com/citations?user=fJEat40AAAAJ
+    homepage: https://konstantindobler.me
+    institution: Hasso Plattner Institute
+    last_name: Dobler
+    name: Konstantin Dobler
+    semantic_scholar_id: https://www.semanticscholar.org/author/Konstantin-Dobler/2156114269
+    username: ~Konstantin_Dobler1
+  - emails: moritz.schneider@hpi.uni-potsdam.de
+    first_name: Moritz
+    institution: Hasso Plattner Institute
+    last_name: Schneider
+    name: Moritz Schneider
+    username: ~Moritz_Schneider2
+  - dblp_id: https://dblp.org/pid/86/1747
+    emails: gdm@demelo.org
+    first_name: Gerard
+    google_scholar_id: https://scholar.google.com.tw/citations?user=WCQXaGkAAAAJ
+    homepage: http://gerard.demelo.org/
+    institution: Hasso Plattner Institute and University of Potsdam
+    last_name: De Melo
+    name: Gerard de Melo
+    orcid: https://orcid.org/0000-0002-2930-2059
+    semantic_scholar_id: https://www.semanticscholar.org/author/Gerard-de-Melo/144608002
+    username: ~Gerard_de_Melo3
+  decision: Poster
+  end_page: 108
+  file: 29.pdf
+  id: 29
+  num_pages: 13
+  openreview_id: WM5X92815P
+  pdf_file: 921c28ce58202374660250a3932cfbb79105d0a2.pdf
+  start_page: 96
+  title: 'Knowledge Acquisition through Continued Pretraining is Difficult: A Case
+    Study on r/AskHistorians'
+- abstract: This paper investigates the capabilities of Large Language Models (LLMs)
+    in the context of understanding their knowledge and uncertainty over questions.
+    Specifically, we focus on addressing \textit{known-unknown} questions, characterized
+    by high uncertainty due to the absence of definitive answers. To facilitate our
+    study, we collect a new dataset with \textbf{K}nown-\textbf{U}nknown \textbf{Q}uestions
+    (KUQ) and establish a categorization framework to clarify the origins of uncertainty
+    in such queries. Subsequently, we examine the performance of open-source LLMs,
+    fine-tuned using this dataset, in distinguishing between known and unknown queries
+    within open-ended question-answering scenarios. The fine-tuned models demonstrated
+    a significant improvement, achieving a considerable increase in F1-score relative
+    to their pre-fine-tuning state. Through a comprehensive analysis, we reveal insights
+    into the models' improved uncertainty articulation and their consequent efficacy
+    in multi-agent debates. These findings help us understand how LLMs can be trained
+    to identify and express uncertainty, improving our knowledge of how they understand
+    and express complex or unclear information.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: aamayuelasfernandez@ucsb.edu
+    first_name: Alfonso
+    homepage: https://www.amayuelas.me/
+    last_name: Amayuelas
+    name: Alfonso Amayuelas
+    username: ~Alfonso_Amayuelas2
+  - emails: knw@ucsb.edu
+    first_name: Kyle
+    last_name: Wong
+    name: Kyle Wong
+    username: ~Kyle_Wong1
+  - dblp_id: https://dblp.org/pid/186/9707
+    emails: liangmingpan@ucsb.edu
+    first_name: Liangming
+    google_scholar_id: https://scholar.google.com/citations?user=JcjjOTUAAAAJ
+    homepage: http://www.liangmingpan.com
+    institution: University of California, Santa Barbara
+    last_name: Pan
+    name: Liangming Pan
+    semantic_scholar_id: https://www.semanticscholar.org/author/Liangming-Pan/3470231
+    username: ~Liangming_Pan1
+  - dblp_id: https://dblp.uni-trier.de/pers/c/Chen:Wenhu.html
+    emails: hustchenwenhu@gmail.com
+    first_name: Wenhu
+    google_scholar_id: https://scholar.google.co.jp/citations?user=U8ShbhUAAAAJ&hl=en
+    homepage: https://wenhuchen.github.io/
+    institution: University of Waterloo and Google
+    last_name: Chen
+    name: Wenhu Chen
+    semantic_scholar_id: https://www.semanticscholar.org/author/Wenhu-Chen/2928777
+    username: ~Wenhu_Chen3
+  - dblp_id: https://dblp.org/pid/08/9282
+    emails: william@cs.ucsb.edu
+    first_name: William Yang
+    google_scholar_id: https://scholar.google.com/citations?user=gf8Ms_8AAAAJ&hl=en
+    homepage: https://www.cs.ucsb.edu/~william/
+    institution: UC Santa Barbara
+    last_name: Wang
+    name: William Yang Wang
+    username: ~William_Yang_Wang2
+  decision: Poster
+  file: 30.pdf
+  id: 30
+  openreview_id: 5rGpDCYTyo
+  pdf_file: ae2acaa68bd4d2526cde865bdb1d0f3560e2bcce.pdf
+  title: 'Knowledge of Knowledge: Exploring Known-Unknowns Uncertainty with Large
+    Language Models'
+- abstract: Large Language Models (LLMs) might hallucinate facts, while curated Knowledge
+    Graph (KGs) are typically factually reliable especially with domain-specific knowledge.
+    Measuring the alignment between KGs and LLMs can effectively probe the factualness
+    and identify the knowledge blind spots of LLMs. However, verifying the LLMs over
+    extensive KGs can be expensive. In this paper, we present KGLens, a Thompson-sampling-inspired
+    framework aimed at effectively and efficiently measuring the alignment between
+    KGs and LLMs. KGLens features a graph-guided question generator for converting
+    KGs into natural language, along with a carefully designed importance sampling
+    strategy based on parameterized KG structure to expedite KG traversal. Our simulation
+    experiment compares the brute force method with KGLens under six different sampling
+    methods, demonstrating that our approach achieves superior probing efficiency.
+    Leveraging KGLens, we conducted in-depth analyses of the factual accuracy of ten
+    LLMs across three large domain-specific KGs from Wikidata, composing over 19K
+    edges, 700 relations, and 21K entities. Human evaluation results indicate that
+    KGLens can assess LLMs with a level of accuracy nearly equivalent to that of human
+    annotators, achieving 95.7% of the accuracy rate.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: dan.z@apple.com
+    first_name: Shangshang
+    google_scholar_id: https://scholar.google.com/citations?user=LD3Y-sEAAAAJ&hl=en&oi=sra
+    homepage: https://scholar.google.com/citations?user=LD3Y-sEAAAAJ&hl=en&oi=sra
+    last_name: Zheng
+    name: Shangshang Zheng
+    orcid: https://orcid.org/0000-0002-6291-5578
+    username: ~Shangshang_Zheng1
+  - dblp_id: https://dblp.org/pid/73/5171-2
+    emails: hbai22@apple.com
+    first_name: Richard
+    google_scholar_id: https://scholar.google.ca/citations?user=MIcmEaMAAAAJ&hl=en
+    institution: Apple
+    last_name: Bai
+    middle_name: He
+    name: Richard He Bai
+    orcid: https://orcid.org/0000-0002-8933-647X
+    semantic_scholar_id: https://www.semanticscholar.org/author/37374479
+    username: ~Richard_He_Bai1
+  - dblp_id: https://dblp.org/pid/132/4966
+    emails: yizhe.zhang@hotmail.com
+    first_name: Yizhe
+    google_scholar_id: https://scholar.google.com/citations?user=WDVMfggAAAAJ
+    homepage: https://dreasysnail.github.io
+    institution: Apple
+    last_name: Zhang
+    name: Yizhe Zhang
+    username: ~Yizhe_Zhang2
+  - emails: yi\_su@apple.com
+    first_name: Yi
+    google_scholar_id: https://scholar.google.com/citations?user=dI7agnkAAAAJ&hl=en
+    homepage: https://nuance1979.bitbucket.io
+    institution: Apple
+    last_name: Su
+    name: Yi Su
+    username: ~Yi_Su4
+  - emails: xniu@apple.com
+    first_name: Xiaochuan
+    institution: Apple
+    last_name: Niu
+    name: Xiaochuan Niu
+    username: ~Xiaochuan_Niu1
+  - dblp_id: https://dblp.org/pid/04/6137
+    emails: njaitly@apple.com
+    first_name: Navdeep
+    google_scholar_id: https://scholar.google.com/citations?user=kjMNMLkAAAAJ
+    homepage: http://www.cs.toronto.edu/~ndjaitly/
+    institution: Apple
+    last_name: Jaitly
+    name: Navdeep Jaitly
+    username: ~Navdeep_Jaitly1
+  decision: Poster
+  file: 31.pdf
+  id: 31
+  openreview_id: tT6lGtqNB3
+  pdf_file: 99213a64ddbf27c862ed24e28e955f488ec64929.pdf
+  title: 'KGLens: Towards Efficient and Effective Knowledge Probing of Large Language
+    Models with Knowledge Graphs'
+- abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities
+    across various applications, fundamentally reshaping the landscape of natural
+    language processing (NLP) research. However, recent evaluation frameworks often
+    rely on the output probabilities of LLMs for predictions, primarily due to computational
+    constraints, diverging from real-world LLM usage scenarios. While widely employed,
+    the efficacy of these probability-based evaluation strategies remains an open
+    research question. This study aims to scrutinize the validity of such probability-based
+    evaluation methods within the context of using LLMs for Multiple Choice Questions~(MCQs),
+    highlighting their inherent limitations. Our empirical investigation reveals that
+    the prevalent probability-based evaluation method inadequately aligns with generation-based
+    prediction. Furthermore, current evaluation frameworks typically assess LLMs through
+    predictive tasks based on output probabilities rather than directly generating
+    responses, owing to computational limitations. We illustrate that these probability-based
+    approaches do not effectively correspond with generative predictions. The outcomes
+    of our study can enhance the understanding of LLM evaluation methodologies and
+    provide insights for future research in this domain.
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/248/1663
+    emails: chenyang.lyu@mbzuai.ac.ae
+    first_name: Chenyang
+    homepage: https://lyuchenyang.github.io
+    institution: Mohamed bin Zayed University of Artificial Intelligence
+    last_name: Lyu
+    name: Chenyang Lyu
+    semantic_scholar_id: https://www.semanticscholar.org/author/Chenyang-Lyu/2082426870
+    username: ~Chenyang_Lyu1
+  - dblp_id: https://dblp.org/pid/122/6257
+    emails: minghao.wu@monash.edu
+    first_name: Minghao
+    google_scholar_id: https://scholar.google.co.uk/citations?user=E2zcuy0AAAAJ&hl=en
+    homepage: https://minghao-wu.github.io/
+    last_name: Wu
+    name: Minghao Wu
+    semantic_scholar_id: https://www.semanticscholar.org/author/Minghao-Wu/2145209409
+    username: ~Minghao_Wu1
+  - dblp_id: https://dblp.org/pid/188/8762
+    emails: alham.fikri@gmail.com
+    first_name: Alham
+    google_scholar_id: https://scholar.google.com/citations?user=0Cyfqv4AAAAJ&hl=en&oi=ao
+    institution: Mohamed bin Zayed University of Artificial Intelligence and Amazon
+    last_name: Aji
+    middle_name: Fikri
+    name: Alham Fikri Aji
+    username: ~Alham_Fikri_Aji1
+  decision: Poster
+  end_page: 131
+  file: 34.pdf
+  id: 34
+  num_pages: 23
+  openreview_id: 1P0ZaLqkAr
+  pdf_file: 6d0e61406e52f9928c3443cfe6b9e94bd407065b.pdf
+  start_page: 109
+  title: 'Beyond Probabilities: Unveiling the Misalignment in Evaluating Large Language
+    Models'
+- abstract: 'We introduce a new problem KTRL+F, a knowledge-augmented in-document
+    search that necessitates real-time identification of all semantic targets within
+    a document with the awareness of external sources through a single natural query.
+    KTRL+F addresses following unique challenges for in-document search: 1) utilizing
+    knowledge outside the document for extended use of additional information about
+    targets, and 2) balancing between real-time applicability with the performance.
+    We analyze various baselines in KTRL+F and find limitations of existing models,
+    such as hallucinations, high latency, or difficulties in leveraging external knowledge.
+    Therefore, we propose a Knowledge-Augmented Phrase Retrieval model that shows
+    a promising balance between speed and performance by simply augmenting external
+    knowledge in phrase embedding. We also conduct a user study to verify whether
+    solving KTRL+F can enhance search experience for users. It demonstrates that even
+    with our simple model, users can reduce the time for searching with less queries
+    and reduced extra visits to other sources for collecting evidence. We encourage
+    the research community to work on KTRL+F to enhance more efficient in-document
+    information access.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/304/2544
+    emails: hanseok.pro@gmail.com
+    first_name: Hanseok
+    homepage: https://hanseokoh.github.io/
+    last_name: Oh
+    name: Hanseok Oh
+    semantic_scholar_id: https://www.semanticscholar.org/author/Hanseok-Oh/2150052936
+    username: ~Hanseok_Oh1
+  - dblp_id: https://dblp.org/pid/324/3574
+    emails: sunsal0704@gmail.com
+    first_name: Haebin
+    institution: Korea Advanced Institute of Science & Technology and Samsung
+    last_name: Shin
+    name: Haebin Shin
+    semantic_scholar_id: https://www.semanticscholar.org/author/Haebin-Shin/2266482633
+    username: ~Haebin_Shin1
+  - dblp_id: https://dblp.org/pid/204/2947
+    emails: miyoungko@kaist.ac.kr
+    first_name: Miyoung
+    institution: Korea Advanced Institute of Science and Technology
+    last_name: Ko
+    name: Miyoung Ko
+    semantic_scholar_id: https://www.semanticscholar.org/author/Miyoung-Ko/22670284
+    username: ~Miyoung_Ko1
+  - emails: alee6868@gmail.com
+    first_name: Hyunji
+    google_scholar_id: https://scholar.google.com/citations?user=LQ-52vsAAAAJ&hl=en
+    homepage: https://amy-hyunji.github.io/
+    institution: Korea Advanced Institute of Science & Technology
+    last_name: Lee
+    name: Hyunji Lee
+    semantic_scholar_id: https://www.semanticscholar.org/author/Hyunji-Lee/2140191673
+    username: ~Hyunji_Lee1
+  - dblp_id: https://dblp.org/pid/149/1367
+    emails: seominjoon@gmail.com
+    first_name: Minjoon
+    google_scholar_id: https://scholar.google.com/citations?user=zYze5fIAAAAJ&hl=en
+    homepage: https://seominjoon.github.io
+    institution: Twelve Labs and Korea Advanced Institute of Science and Technology
+    last_name: Seo
+    name: Minjoon Seo
+    semantic_scholar_id: https://www.semanticscholar.org/author/Minjoon-Seo/4418074
+    username: ~Minjoon_Seo1
+  decision: Poster
+  file: 35.pdf
+  id: 35
+  openreview_id: SRlRvPiC6l
+  pdf_file: a861cb16f0d4dc822805f14a7f862aebadfb722f.pdf
+  title: 'KTRL+F: Knowledge-Augmented In-Document Search'
+- abstract: Large language models (LLMs) need knowledge updates to meet the ever-growing
+    world facts and correct the hallucinated responses, facilitating the methods of
+    lifelong model editing. Where the updated knowledge resides in memories is a fundamental
+    question for model editing. In this paper, we find that editing either long-term
+    memory (direct model parameters) or working memory (non-parametric knowledge of
+    neural network activations/representations by retrieval) will result in an impossible
+    triangle---reliability, generalization, and locality can not be realized together
+    in the lifelong editing settings. For long-term memory, directly editing the parameters
+    will cause conflicts with irrelevant pretrained knowledge or previous edits (poor
+    reliability and locality). For working memory, retrieval-based activations can
+    hardly make the model understand the edits and generalize (poor generalization).
+    Therefore, we propose WISE to bridge the gap between memories. In WISE, we design
+    a dual parametric memory scheme, which consists of the main memory for the pretrained
+    knowledge and a side memory for the edited knowledge. We only edit the knowledge
+    in the side memory and train a router to decide which memory to go through when
+    given a query. For continual editing, we devise a knowledge-sharding mechanism
+    where different sets of edits reside in distinct subspaces of parameters, and
+    are subsequently merged into a shared memory without conflicts. Extensive experiments
+    show that WISE can outperform previous model editing methods and overcome the
+    impossible triangle under lifelong model editing of question answering, hallucination,
+    and out-of-distribution settings across trending LLM architectures, e.g., GPT,
+    LLaMA, and Mistral.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: peng2001@zju.edu.cn
+    first_name: Peng
+    last_name: Wang
+    name: Peng Wang
+    orcid: https://orcid.org/0000-0003-0920-0626
+    username: ~Peng_Wang28
+  - dblp_id: https://dblp.org/pid/151/9187-1
+    emails: zexi.li@zju.edu.cn
+    first_name: Zexi
+    google_scholar_id: https://scholar.google.com.hk/citations?user=6lMg5eoAAAAJ&hl=zh-CN
+    homepage: https://zexilee.github.io/about-zexili/
+    last_name: Li
+    name: Zexi Li
+    orcid: https://orcid.org/0000-0003-0831-3549
+    username: ~Zexi_Li1
+  - dblp_id: https://dblp.org/pid/139/4181-1.html
+    emails: zhangningyu@zju.edu.cn
+    first_name: Ningyu
+    google_scholar_id: https://scholar.google.com/citations?user=xQDOPvsAAAAJ&hl=en
+    homepage: https://person.zju.edu.cn/en/ningyu
+    institution: Zhejiang University
+    last_name: Zhang
+    name: Ningyu Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ningyu-Zhang/2608639
+    username: ~Ningyu_Zhang1
+  - emails: uestcxzw@163.com
+    first_name: Ziwen
+    google_scholar_id: https://scholar.google.com/citations?user=5oqIUicAAAAJ
+    institution: Zhejiang University
+    last_name: Xu
+    name: Ziwen Xu
+    username: ~Ziwen_Xu1
+  - dblp_id: https://dblp.org/pid/295/9476
+    emails: yyztodd@zju.edu.cn
+    first_name: Yunzhi
+    google_scholar_id: https://scholar.google.com.hk/citations?user=nAagIwEAAAAJ&hl=zh-CN
+    last_name: Yao
+    name: Yunzhi Yao
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yunzhi-Yao/4841460
+    username: ~Yunzhi_Yao1
+  - emails: jiangyong.ml@gmail.com
+    first_name: Yong
+    google_scholar_id: https://scholar.google.com/citations?user=sxXZWQQAAAAJ&hl=en
+    homepage: http://jiangyong.site/
+    last_name: Jiang
+    name: Yong Jiang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yong-Jiang/50262192?sort=influence
+    username: ~Yong_Jiang1
+  - dblp_id: https://dblp.org/pid/212/1755.html
+    emails: chengchen.xpj@alibaba-inc.com
+    first_name: Pengjun
+    last_name: Xie
+    name: Pengjun Xie
+    username: ~Pengjun_Xie2
+  - dblp_id: https://dblp.org/pid/h/FeiHuang.html
+    emails: feirhuang@gmail.com
+    first_name: Fei
+    google_scholar_id: https://scholar.google.com/citations?user=9r98PpoAAAAJ
+    homepage: https://sites.google.com/view/fei-huang
+    institution: Alibaba Group
+    last_name: Huang
+    name: Fei Huang
+    username: ~Fei_Huang1
+  - dblp_id: https://dblp.org/pid/94/5089
+    emails: huajunsir@zju.edu.cn
+    first_name: Huajun
+    institution: Zhejiang University
+    last_name: Chen
+    name: Huajun Chen
+    username: ~Huajun_Chen1
+  decision: Poster
+  file: 36.pdf
+  id: 36
+  openreview_id: piMfu5uMiA
+  pdf_file: de82ac8c420922543ed95fd191ea782bb8da3fbc.pdf
+  title: 'WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large
+    Language Models'
+- abstract: Large Language Models (LLMs) demonstrate remarkable potential across various
+    domains; however, they exhibit a significant performance gap in Information Extraction
+    (IE). Note that high-quality instruction data is the vital key for enhancing the
+    specific capabilities of LLMs, while current IE datasets tend to be small in scale,
+    fragmented, and lack standardized schema. To this end, we introduce IEPile a comprehensive
+    bilingual (English and Chinese) IE instruction corpus, which contains approximately
+    0.32B tokens. We construct IEPile by collecting and cleaning 33 existing IE datasets,
+    and introduce schema-based instruction generation to unearth a large-scale corpus.
+    Experimental results on LLaMA, Baichuan and Qwen demonstrate that using IEPile
+    can enhance the performance of LLMs for IE, especially the zero-shot generalization.
+    We open-source the resource and pre-trained models, hoping to provide valuable
+    support to the NLP community.
+  archival: false
+  attributes:
+    paper_type: short
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: guihonghao@zju.edu.cn
+    first_name: Honghao
+    google_scholar_id: https://scholar.google.com/citations?user=ekxyQTYAAAAJ&hl=zh-CN
+    last_name: Gui
+    name: Honghao Gui
+    username: ~Honghao_Gui1
+  - emails: huiwai.yl@antgroup.com
+    first_name: Lin
+    homepage: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=SYn_4ZEAAAAJ&gmla=AH70aAWMhuQ4gFhR6xkHOT_cfzKUnsvZ8CqVikAVfAHhWoTa6Z1r0frtibCiRd0f1xRSaV_rv58DYBmjRhK_3JtUVrYXspQcrE_nHLMSVO8V-7zZqw
+    institution: Alibaba Group
+    last_name: Yuan
+    name: Lin Yuan
+    username: ~Lin_Yuan5
+  - dblp_id: https://dblp.uni-trier.de/pid/274/3132.html
+    emails: yehongbin@zhejianglab.com
+    first_name: Hongbin
+    google_scholar_id: https://scholar.google.com/citations?user=IcpPEoQAAAAJ&hl=zh-CN
+    last_name: Ye
+    name: Hongbin Ye
+    username: ~Hongbin_Ye1
+  - dblp_id: https://dblp.org/pid/139/4181-1.html
+    emails: zhangningyu@zju.edu.cn
+    first_name: Ningyu
+    google_scholar_id: https://scholar.google.com/citations?user=xQDOPvsAAAAJ&hl=en
+    homepage: https://person.zju.edu.cn/en/ningyu
+    institution: Zhejiang University
+    last_name: Zhang
+    name: Ningyu Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ningyu-Zhang/2608639
+    username: ~Ningyu_Zhang1
+  - emails: mengshu.sms@antgroup.com
+    first_name: Mengshu
+    google_scholar_id: https://scholar.google.com.hk/citations?view_op=list_works&hl=zh-CN&user=_he_pZYAAAAJ
+    last_name: Sun
+    name: Mengshu Sun
+    username: ~Mengshu_Sun2
+  - emails: leywar.liang@antgroup.com
+    first_name: Lei
+    homepage: https://github.com/leywar
+    last_name: Liang
+    name: Lei Liang
+    username: ~Lei_Liang2
+  - dblp_id: https://dblp.org/pid/94/5089
+    emails: huajunsir@zju.edu.cn
+    first_name: Huajun
+    institution: Zhejiang University
+    last_name: Chen
+    name: Huajun Chen
+    username: ~Huajun_Chen1
+  decision: Poster
+  file: 37.pdf
+  id: 37
+  openreview_id: 5gCgatLjpV
+  pdf_file: 0b48f029ce7f695269f3c02a7612482343ff37f8.pdf
+  title: 'IEPile: Unearthing Large Scale Schema-Conditioned Information Extraction
+    Corpus'
+- abstract: "Relation extraction (RE) aims to identify semantic relationships between\
+    \ entities within text. Despite considerable advancements, existing models predominantly\
+    \ require extensive annotated training data, which is both costly and labor-intensive\
+    \ to collect. Moreover, these models often struggle to adapt to new or unseen\
+    \ relations. Few-shot learning, aiming to lessen annotation demands, typically\
+    \ provides incomplete and biased supervision for target relations, leading to\
+    \ degraded and unstable performance. To accurately and explicitly describe relation\
+    \ semantics while minimizing annotation demands, we explore the definition only\
+    \ zero-shot RE setting where only relation definitions expressed in natural language\
+    \ are used to train a RE model. We introduce REPaL, comprising three stages: (1)\
+    \ We leverage large language models (LLMs) to generate initial seed instances\
+    \ from relation definitions and an unlabeled corpus. (2) We fine-tune a bidirectional\
+    \ Small Language Model (SLM) with initial seeds to learn relations for the target\
+    \ domain. (3) We expand pattern coverage and mitigate bias from initial seeds\
+    \ by integrating feedback from the SLM\u2019s predictions on the unlabeled corpus\
+    \ and the synthesis history. To accomplish this, we leverage the multi-turn conversation\
+    \ ability of LLMs to generate new instances in follow-up dialogues, informed by\
+    \ both the feedback and synthesis history. Studies reveal that definition-oriented\
+    \ seed synthesis enhances pattern coverage whereas indiscriminately increasing\
+    \ seed quantity leads to performance saturation. Experiments on two datasets show\
+    \ REPaL significantly improved zero-shot performance by large margins."
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/331/2857
+    emails: sizhez@illinois.edu
+    first_name: Sizhe
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=8K3MqfEAAAAJ
+    last_name: Zhou
+    name: Sizhe Zhou
+    orcid: https://orcid.org/0009-0005-5145-7152
+    semantic_scholar_id: https://www.semanticscholar.org/author/Sizhe-Zhou/2187778761
+    username: ~Sizhe_Zhou2
+  - dblp_id: https://dblp.org/pid/30/4233-1
+    emails: yumeng5@virginia.edu
+    first_name: Yu
+    google_scholar_id: https://scholar.google.com/citations?user=S2-yZKcAAAAJ&hl=en
+    homepage: https://yumeng5.github.io/
+    institution: University of Virginia
+    last_name: Meng
+    name: Yu Meng
+    orcid: https://orcid.org/0000-0003-2554-2888
+    username: ~Yu_Meng1
+  - dblp_id: https://dblp.org/pid/235/8066
+    emails: bowen\_jin@outlook.com
+    first_name: Bowen
+    google_scholar_id: https://scholar.google.com/citations?hl=zh-CN&user=dMwdOPkAAAAJ
+    homepage: https://peterjin.me/
+    institution: University of Illinois at Urbana-Champaign
+    last_name: Jin
+    name: Bowen Jin
+    username: ~Bowen_Jin1
+  - dblp_id: https://dblp.org/pid/h/JiaweiHan.html
+    emails: hanj@cs.uiuc.edu
+    first_name: Jiawei
+    google_scholar_id: https://scholar.google.com.tw/citations?user=Kv9AbjMAAAAJ
+    homepage: http://hanj.cs.illinois.edu/
+    last_name: Han
+    name: Jiawei Han
+    semantic_scholar_id: https://www.semanticscholar.org/author/Jiawei-Han/145325584
+    username: ~Jiawei_Han1
+  decision: Poster
+  file: 38.pdf
+  id: 38
+  openreview_id: IPwl7CMBei
+  pdf_file: b43fd10beea291b5eba5c34e22b45bb8a5e5310d.pdf
+  title: 'Grasping the Essentials: Tailoring Large Language Models for Zero-Shot Relation
+    Extraction'
+- abstract: Relation extraction aims to classify the relationships between two entities
+    into pre-defined categories. While previous research has mainly focused on sentence-level
+    relation extraction, recent studies have expanded the scope to document-level
+    relation extraction. Traditional relation extraction methods heavily rely on human-annotated
+    training data, which is time-consuming and labor-intensive. To mitigate the need
+    for manual annotation, recent weakly-supervised approaches have been developed
+    for sentence-level relation extraction while limited work has been done on document-level
+    relation extraction. Weakly-supervised document-level relation extraction faces
+    significant challenges due to an imbalanced number "no relation" instances and
+    the failure of directly probing pretrained large language models for document
+    relation extraction. To address these challenges, we propose PromptRE, a novel
+    weakly-supervised document-level relation extraction method that combines prompting-based
+    techniques with data programming. Furthermore, PromptRE incorporates the label
+    distribution and entity types as prior knowledge to improve the performance. By
+    leveraging the strengths of both prompting and data programming, PromptRE achieves
+    improved performance in relation classification and effectively handles the "no
+    relation" problem. Experimental results on ReDocRED, a benchmark dataset for document-level
+    relation extraction, demonstrate the superiority of PromptRE over baseline approaches.
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: https://dblp.uni-trier.de/pers/hd/g/Gao:Chufan
+    emails: gaoandy1445@gmail.com
+    first_name: Chufan
+    google_scholar_id: https://scholar.google.com/citations?user=rBlZICgAAAAJ&hl=en
+    homepage: https://chufangao.github.io
+    last_name: Gao
+    name: Chufan Gao
+    username: ~Chufan_Gao1
+  - emails: xulinf2@illinois.edu
+    first_name: Xulin
+    google_scholar_id: https://scholar.google.com/citations?user=fU7hjTYAAAAJ&hl=en
+    last_name: Fan
+    name: Xulin Fan
+    username: ~Xulin_Fan1
+  - dblp_id: https://dblp.uni-trier.de/pid/54/4948.html
+    emails: jimeng.sun@gmail.com
+    first_name: Jimeng
+    google_scholar_id: https://scholar.google.com/citations?user=9jmmp5sAAAAJ&hl=en
+    homepage: http://sunlab.org
+    institution: University of Illinois, Urbana Champaign, College of Computing and
+      Georgia Institute of Technology
+    last_name: Sun
+    name: Jimeng Sun
+    orcid: https://orcid.org/0000-0003-1512-6426
+    username: ~Jimeng_Sun3
+  - dblp_id: https://dblp.org/pid/34/4799-8
+    emails: xuanw@vt.edu
+    first_name: Xuan
+    google_scholar_id: https://scholar.google.com/citations?user=_IVJi6UAAAAJ&hl=en
+    homepage: https://xuanwang91.github.io/
+    institution: Virginia Polytechnic Institute and State University
+    last_name: Wang
+    name: Xuan Wang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Xuan-Wang/2154990549
+    username: ~Xuan_Wang3
+  decision: Poster
+  end_page: 145
+  file: 39.pdf
+  id: 39
+  num_pages: 14
+  openreview_id: AxJyW3wxck
+  pdf_file: 80cb85a7ad65b8dfc51485b43225eaa40c63cacd.pdf
+  start_page: 132
+  title: 'PromptRE: Weakly-Supervised Document-Level Relation Extraction via Prompting-Based
+    Data Programming'
+- abstract: Open-domain generative systems have gained significant attention in the
+    field of conversational AI (e.g., generative search engines). In this paper, we
+    present a comprehensive review of the attribution mechanisms employed by these
+    systems, particularly with large language models. While attribution or citation
+    improves factuality and verifiability, issues like ambiguous knowledge reservoirs,
+    inherent biases, and the drawbacks of excessive attribution can hinder the effectiveness
+    of these systems. The purpose of this survey is to provide valuable implications
+    for researchers, helping in the refinement of attribution methodologies to improve
+    the reliability and veracity of responses generated by open-domain generative
+    systems. We believe that this field is still in its early stages; therefore, we
+    maintain a repository to keep track of ongoing studies at \url{AnonymousURL}.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.uni-trier.de/pid/98/6118.html
+    emails: crazyofapple@gmail.com
+    first_name: Dongfang
+    google_scholar_id: https://scholar.google.com/citations?user=_OOzj40AAAAJ
+    homepage: http://crazyofapple.github.io
+    institution: Harbin Institute of Technology
+    last_name: Li
+    name: Dongfang Li
+    semantic_scholar_id: https://www.semanticscholar.org/author/Dongfang-Li/1664667501
+    username: ~Dongfang_Li2
+  - emails: zetiansun.cs@gmail.com
+    first_name: Zetian
+    homepage: https://github.com/zetian1025
+    last_name: Sun
+    name: Zetian Sun
+    username: ~Zetian_Sun1
+  - emails: yanshek.woo@gmail.com
+    first_name: Xinshuo
+    google_scholar_id: https://scholar.google.com/citations?user=Z3Cq8-4AAAAJ&hl=zh-CN
+    last_name: Hu
+    name: Xinshuo Hu
+    username: ~Xinshuo_Hu2
+  - emails: 1252439618@qq.com
+    first_name: Zhenyu
+    last_name: Liu
+    name: zhenyu liu
+    username: ~zhenyu_liu4
+  - emails: chenziyangnudt@nudt.edu.cn
+    first_name: Ziyang
+    google_scholar_id: https://scholar.google.com.hk/citations?hl=zh-CN&user=RgVEnAwAAAAJ
+    homepage: https://czy1999.github.io/
+    last_name: Chen
+    name: Ziyang Chen
+    orcid: https://orcid.org/0000-0002-1714-0304
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ziyang-Chen/2117098298
+    username: ~Ziyang_Chen3
+  - dblp_id: https://dblp.uni-trier.de/pid/07/668-2
+    emails: xiangzhao@nudt.edu.cn
+    first_name: Xiang
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=7IZ4kgwAAAAJ&view_op=list_works&gmla=AJsN-F7KvOXDj1PXSxSwcwfzX4TmG0tGTfcT_lJarZ142-_-3HnmIOZLTInMR9I4YgRbSmMY8rhzM_XVl7Eq2k10WrVl70XVYiS5H5Zh6eU1IY9dVUGpJTw&gmla=AJsN-F4qwFGBFo3gJVVmrVHJpFNV4R0RZjzq4SIV2UCuPdyshHoArnle8qp-84dLblyfFZXxC4SYrnPyuA3g1td5udhYTp5HOCexPjGfRpvQidzdgBDCbZM&sciund=15845057665591574992
+    homepage: https://xiangz-nudt.github.io/
+    institution: National University of Defense Technology
+    last_name: Zhao
+    name: Xiang Zhao
+    orcid: https://orcid.org/0000-0001-6339-0219
+    semantic_scholar_id: https://www.semanticscholar.org/author/Xiang-Zhao/1862330484
+    username: ~Xiang_Zhao1
+  - dblp_id: https://dblp.org/pid/155/1902
+    emails: baotian.nlp@gmail.com
+    first_name: Baotian
+    google_scholar_id: https://scholar.google.com/citations?user=5NiJ1VoAAAAJ&hl=en
+    institution: Harbin Institute of Technology, Shenzhen
+    last_name: Hu
+    name: Baotian Hu
+    orcid: https://orcid.org/0000-0001-7490-684X
+    username: ~Baotian_Hu1
+  - dblp_id: https://dblp.org/pid/83/5342-5
+    emails: minzhang@suda.edu.cn
+    first_name: Min
+    google_scholar_id: https://scholar.google.com/citations?hl=zh-CN&user=CncXH-YAAAAJ
+    homepage: https://zhangmin-nlp-ai.github.io/
+    institution: Harbin Institute of Technology, Shenzhen
+    last_name: Zhang
+    name: Min Zhang
+    username: ~Min_Zhang9
+  decision: Poster
+  file: 40.pdf
+  id: 40
+  openreview_id: 8HEENogqBD
+  pdf_file: 5a4c258d7a851944ef8a9673d69bb7cf507010de.pdf
+  title: A Survey of Large Language Models Attribution
+- abstract: This paper investigates using knowledge editing techniques to detoxify
+    Large Language Models (LLMs). We construct a benchmark, SafeEdit, which covers
+    nine unsafe categories with various powerful attack prompts and equips comprehensive
+    metrics for systematic evaluation. We conduct experiments with several knowledge
+    editing approaches, indicating that knowledge editing has the potential to efficiently
+    detoxify LLMs with limited impact on general performance. Then, we propose a simple
+    yet effective baseline, dubbed Detoxifying with Intraoperative Neural Monitoring
+    (DINM), to diminish the toxicity of LLMs within a few tuning steps via only one
+    instance. We further provide an in-depth analysis of the internal mechanism for
+    various detoxifying approaches, demonstrating that previous methods like SFT and
+    DPO may merely suppress the activations of toxic parameters, while DINM mitigates
+    the toxicity of the toxic parameters to a certain extent, making permanent adjustments.
+    We hope that these insights could shed light on future work of developing detoxifying
+    approaches and the underlying knowledge mechanisms of LLMs.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: mengruwg@zju.edu.cn
+    first_name: Mengru
+    google_scholar_id: https://scholar.google.com/citations?user=P3bp0egAAAAJ&hl=zh-CN
+    institution: Zhejiang University
+    last_name: Wang
+    name: Mengru Wang
+    orcid: https://orcid.org/0000-0002-4488-9871
+    username: ~Mengru_Wang1
+  - dblp_id: https://dblp.org/pid/139/4181-1.html
+    emails: zhangningyu@zju.edu.cn
+    first_name: Ningyu
+    google_scholar_id: https://scholar.google.com/citations?user=xQDOPvsAAAAJ&hl=en
+    homepage: https://person.zju.edu.cn/en/ningyu
+    institution: Zhejiang University
+    last_name: Zhang
+    name: Ningyu Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ningyu-Zhang/2608639
+    username: ~Ningyu_Zhang1
+  - dblp_id: https://dblp.org/pid/295/9476
+    emails: yyztodd@zju.edu.cn
+    first_name: Yunzhi
+    google_scholar_id: https://scholar.google.com.hk/citations?user=nAagIwEAAAAJ&hl=zh-CN
+    last_name: Yao
+    name: Yunzhi Yao
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yunzhi-Yao/4841460
+    username: ~Yunzhi_Yao1
+  - emails: uestcxzw@163.com
+    first_name: Ziwen
+    google_scholar_id: https://scholar.google.com/citations?user=5oqIUicAAAAJ
+    institution: Zhejiang University
+    last_name: Xu
+    name: Ziwen Xu
+    username: ~Ziwen_Xu1
+  - dblp_id: https://dblp.org/pid/94/5089
+    emails: huajunsir@zju.edu.cn
+    first_name: Huajun
+    institution: Zhejiang University
+    last_name: Chen
+    name: Huajun Chen
+    username: ~Huajun_Chen1
+  decision: Poster
+  file: 41.pdf
+  id: 41
+  openreview_id: t70BrgAGUh
+  pdf_file: d9e2a77776a8b99cb30c4c3a012c627b2de77e44.pdf
+  title: Detoxifying Large Language Models via Knowledge Editing
+- abstract: The remarkable capabilities of modern large language models are rooted
+    in their vast repositories of knowledge encoded within their parameters, enabling
+    them to perceive the world and engage in reasoning. The inner workings of how
+    these models store knowledge have long been a subject of intense interest and
+    investigation among researchers. To date, most studies have concentrated on isolated
+    components within these models, such as the Multilayer Perceptrons and attention
+    head. In this paper, we delve into the computation graph of the language model
+    to uncover the knowledge circuits that are instrumental in articulating specific
+    knowledge. The experiments, conducted with GPT2 and TinyLLAMA, has allowed us
+    to observe how certain information heads, relation heads, and Multilayer Perceptrons
+    collaboratively encode knowledge within the model. Moreover, we evaluate the impact
+    of current knowledge editing techniques on these knowledge circuits, providing
+    deeper insights into the functioning and constraints of these editing methodologies.
+    Finally, we utilize knowledge circuits to analyze and interpret language model
+    behaviors such as hallucinations and in-context learning. We believe the knowledge
+    circuit holds potential for advancing our understanding of Transformers and guiding
+    the improved design of knowledge editing.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/295/9476
+    emails: yyztodd@zju.edu.cn
+    first_name: Yunzhi
+    google_scholar_id: https://scholar.google.com.hk/citations?user=nAagIwEAAAAJ&hl=zh-CN
+    last_name: Yao
+    name: Yunzhi Yao
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yunzhi-Yao/4841460
+    username: ~Yunzhi_Yao1
+  - dblp_id: https://dblp.org/pid/139/4181-1.html
+    emails: zhangningyu@zju.edu.cn
+    first_name: Ningyu
+    google_scholar_id: https://scholar.google.com/citations?user=xQDOPvsAAAAJ&hl=en
+    homepage: https://person.zju.edu.cn/en/ningyu
+    institution: Zhejiang University
+    last_name: Zhang
+    name: Ningyu Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ningyu-Zhang/2608639
+    username: ~Ningyu_Zhang1
+  - emails: xizekunnlp@163.com
+    first_name: Zekun
+    homepage: https://github.com/pillow-xi
+    last_name: Xi
+    name: Zekun Xi
+    username: ~Zekun_Xi2
+  - emails: mengruwg@zju.edu.cn
+    first_name: Mengru
+    google_scholar_id: https://scholar.google.com/citations?user=P3bp0egAAAAJ&hl=zh-CN
+    institution: Zhejiang University
+    last_name: Wang
+    name: Mengru Wang
+    orcid: https://orcid.org/0000-0002-4488-9871
+    username: ~Mengru_Wang1
+  - emails: uestcxzw@163.com
+    first_name: Ziwen
+    google_scholar_id: https://scholar.google.com/citations?user=5oqIUicAAAAJ
+    institution: Zhejiang University
+    last_name: Xu
+    name: Ziwen Xu
+    username: ~Ziwen_Xu1
+  - dblp_id: https://dblp.org/pid/213/1853
+    emails: 231sm@zju.edu.cn
+    first_name: Shumin
+    google_scholar_id: https://scholar.google.com/citations?user=3am3hL4AAAAJ&hl=zh-CN
+    homepage: https://231sm.github.io/
+    last_name: Deng
+    name: Shumin Deng
+    semantic_scholar_id: https://www.semanticscholar.org/author/Shumin-Deng/152931849
+    username: ~Shumin_Deng1
+  - dblp_id: https://dblp.org/pid/94/5089
+    emails: huajunsir@zju.edu.cn
+    first_name: Huajun
+    institution: Zhejiang University
+    last_name: Chen
+    name: Huajun Chen
+    username: ~Huajun_Chen1
+  decision: Poster
+  file: 44.pdf
+  id: 44
+  openreview_id: p5wc27j1Bh
+  pdf_file: 71f184f53b703ae3b19759ba0f75cc8bd94c7ff3.pdf
+  title: Knowledge Circuits in Pretrained Transformers
+- abstract: 'A successful response to Office Action is crucial for an invention to
+    obtain a patent. While previous attempts have applied generalised LLMs, such as
+    GPT-4, in the response process, there remains significant room for improvement
+    in generating faithful, unbiased, and practically valuable responses. To address
+    this issue, we propose the Patent Response System Optimised for Faithfulness (PRO).
+    PRO explicitly incorporates procedural knowledge used by patent agents during
+    drafting arguments in response. This framework comprises several key components:
+    (1) Our proposed PRLLM is a LLM tailored for patent responses, designed to have
+    comprehensive patent domain-specific knowledge. (2) Our proposed PPNet encodes
+    legal interpretations and relationships between technical components from judicial
+    sources through a knowledge graph. (3) The augmented generation processes retrieve
+    relevant information from both the patent text and PPNet to augment the PRLLM''s
+    input and generate faithful responses. Results show that PRO significantly reduces
+    unfaithfulness across six error types compared to several settings. For instance,
+    PRO outperforms GPT-4 by an average of 39% in terms of faithfulness. This demonstrates
+    the effectiveness of our domain-specific approach in improving the quality of
+    automated patent responses.'
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/367/7388
+    emails: d09944017@ntu.edu.tw
+    first_name: Jung-Mei
+    google_scholar_id: https://scholar.google.com.tw/citations?hl=zh-TW&pli=1&user=Xo81ZxYAAAAJ
+    institution: National Taiwan University
+    last_name: Chu
+    name: Jung-Mei Chu
+    username: ~Jung-Mei_Chu1
+  - dblp_id: https://dblp.org/pid/367/6977
+    emails: austenpsy@gmail.com
+    first_name: Hao-Cheng
+    google_scholar_id: https://scholar.google.com/citations?user=rkF3om0AAAAJ&hl=en
+    institution: JCIPRNET and National Taiwan University
+    last_name: Lo
+    name: Hao-Cheng Lo
+    orcid: https://orcid.org/0009-0005-4176-4861
+    username: ~Hao-Cheng_Lo1
+  - emails: jhsiang@ntu.edu.tw
+    first_name: Jieh
+    google_scholar_id: https://scholar.google.com.tw/citations?user=Rxg0ObMAAAAJ
+    homepage: http://www.digital.ntu.edu.tw/hsiang/
+    institution: National Taiwan University
+    last_name: Hsiang
+    name: Jieh Hsiang
+    username: ~Jieh_Hsiang1
+  - dblp_id: https://dblp.org/pid/367/7023
+    emails: d09944017@csie.ntu.edu.tw
+    first_name: Chun-Chieh
+    institution: JCIPRNET
+    last_name: Cho
+    name: Chun-Chieh Cho
+    username: ~Chun-Chieh_Cho1
+  decision: Poster
+  end_page: 155
+  file: 45.pdf
+  id: 45
+  num_pages: 10
+  openreview_id: nQZMraqkHX
+  pdf_file: 0406f3ae0ad5281904bf439e5915b112fba0531a.pdf
+  start_page: 146
+  title: 'Patent Response System Optimised for Faithfulness: Procedural Knowledge
+    Embodiment with Knowledge Graph and Retrieval Augmented Generation'
+- abstract: Despite significant strides in multimodal tasks, Multimodal Large Language
+    Models (MLLMs) are plagued by the critical issue of hallucination. The reliable
+    detection of such hallucinations in MLLMs has, therefore, become a vital aspect
+    of model evaluation and the safeguarding of practical application deployment.
+    Prior research in this domain has been constrained by a narrow focus on singular
+    tasks, an inadequate range of hallucination categories addressed, and a lack of
+    detailed granularity. In response to these challenges, our work expands the investigative
+    horizons of hallucination detection. We present a novel meta-evaluation benchmark,
+    MHaluBench, meticulously crafted to facilitate the evaluation of advancements
+    in hallucination detection methods. Additionally, we unveil a novel unified multimodal
+    hallucination detection framework, UNIHD, which leverages a suite of auxiliary
+    tools to validate the occurrence of hallucinations robustly. We demonstrate the
+    effectiveness of UNIHD through meticulous evaluation and comprehensive analysis.
+    We also provide strategic insights on the application of specific tools for addressing
+    various categories of hallucinations.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: https://dblp.org/pid/64/3062-16
+    emails: xiang\_chen@zju.edu.cn
+    first_name: Xiang
+    google_scholar_id: https://scholar.google.com/citations?user=pXivdn8AAAAJ&hl=zh-CN
+    homepage: https://github.com/njcx-ai
+    last_name: Chen
+    name: Xiang Chen
+    orcid: https://orcid.org/0000-0002-2594-0600
+    semantic_scholar_id: https://www.semanticscholar.org/author/Xiang-Chen/153773882
+    username: ~Xiang_Chen5
+  - emails: 2015248488@qq.com
+    first_name: Chenxi
+    homepage: https://github.com/wcx881212
+    last_name: Wang
+    name: Chenxi Wang
+    username: ~Chenxi_Wang5
+  - emails: xueyida@qq.com
+    first_name: Yida
+    homepage: https://github.com/coderxyd
+    institution: Zhejiang University
+    last_name: Xue
+    name: Yida Xue
+    username: ~Yida_Xue1
+  - dblp_id: https://dblp.org/pid/139/4181-1.html
+    emails: zhangningyu@zju.edu.cn
+    first_name: Ningyu
+    google_scholar_id: https://scholar.google.com/citations?user=xQDOPvsAAAAJ&hl=en
+    homepage: https://person.zju.edu.cn/en/ningyu
+    institution: Zhejiang University
+    last_name: Zhang
+    name: Ningyu Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ningyu-Zhang/2608639
+    username: ~Ningyu_Zhang1
+  - emails: joyce.yxy@antgroup.com
+    first_name: Xiaoyan
+    last_name: Yang
+    name: xiaoyan yang
+    orcid: https://orcid.org/0000-0001-7799-8460
+    username: ~xiaoyan_yang4
+  - emails: mangxiao.lq@antgroup.com
+    first_name: Qiang
+    homepage: http://www.mangxiao.com
+    last_name: Li
+    name: Qiang Li
+    username: ~Qiang_Li24
+  - emails: zhanying@antgroup.com
+    first_name: Yue
+    google_scholar_id: https://scholar.google.com/citations?user=ca1Tp_4AAAAJ&hl=zh-CN
+    institution: 'antgroup '
+    last_name: Shen
+    name: YUE SHEN
+    username: ~YUE_SHEN3
+  - emails: leywar.liang@antgroup.com
+    first_name: Lei
+    homepage: https://github.com/leywar
+    last_name: Liang
+    name: Lei Liang
+    username: ~Lei_Liang2
+  - dblp_id: https://dblp.org/pid/251/9600
+    emails: jinjie.gujj@antgroup.com
+    first_name: Jinjie
+    google_scholar_id: https://scholar.google.com/citations?user=Mz2HnKwAAAAJ&hl=zh-CN&oi=ao
+    last_name: GU
+    name: Jinjie GU
+    orcid: https://orcid.org/0000-0001-7596-4945
+    username: ~Jinjie_GU1
+  - dblp_id: https://dblp.org/pid/94/5089
+    emails: huajunsir@zju.edu.cn
+    first_name: Huajun
+    institution: Zhejiang University
+    last_name: Chen
+    name: Huajun Chen
+    username: ~Huajun_Chen1
+  decision: Oral
+  file: 49.pdf
+  id: 49
+  openreview_id: vZbEP8ixGB
+  pdf_file: 94575e07859b8cfd69ca2556422e592fef01a336.pdf
+  title: Unified Hallucination Detection for Multimodal Large Language Models
+- abstract: 'Machine Reading Comprehension (MRC) poses a significant challenge in
+    the field of Natural Language Processing (NLP). While mainstream MRC methods predominantly
+    leverage extractive strategies using encoder-only models such as BERT, generative
+    approaches face the issue of $\textit{out-of-control generation} $-- a critical
+    problem where answers generated are often incorrect, irrelevant, or unfaithful
+    to the source text. To address these limitations in generative models for extractive
+    MRC, we introduce the $\textbf{Q}$uestion-$\textbf{A}$ttended $\textbf{S}$pan
+    $\textbf{E}$xtraction ($\textit{QASE}$) module. Integrated during the fine-tuning
+    phase of pre-trained generative language models (PLMs), $\textit{QASE}$ significantly
+    enhances their performance, allowing them to surpass the extractive capabilities
+    of advanced Large Language Models (LLMs) such as GPT-4 in few-shot settings. Notably,
+    these gains in performance do not come with an increase in computational demands.
+    The efficacy of the $\textit{QASE}$ module has been rigorously tested across various
+    datasets, consistently achieving or even surpassing state-of-the-art (SOTA) results.
+    Our code is available at this anonymous repo link: https://anonymous.4open.science/r/QASE-7753/README.md.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/22/4256
+    emails: lin.ai@cs.columbia.edu
+    first_name: Lin
+    homepage: http://www.cs.columbia.edu/speech/people.cgi?p=lin
+    last_name: Ai
+    name: Lin Ai
+    username: ~Lin_Ai1
+  - emails: zh2483@columbia.edu
+    first_name: Zheng
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=BnlPIK0AAAAJ
+    homepage: https://www.zackhui.world
+    institution: Columbia University
+    last_name: Hui
+    name: Zheng Hui
+    semantic_scholar_id: https://www.semanticscholar.org/author/Zheng-Zack-Hui/2086808192
+    username: ~Zheng_Hui2
+  - emails: zl2889@columbia.edu
+    first_name: Zizhou
+    google_scholar_id: https://scholar.google.com/citations?user=kt1n_wQAAAAJ&hl=en
+    last_name: Liu
+    name: Zizhou Liu
+    username: ~Zizhou_Liu1
+  - emails: julia@cs.columbia.edu
+    first_name: Julia
+    google_scholar_id: https://scholar.google.com/citations?user=Qrd7FCoAAAAJ&hl=en
+    homepage: http://www.cs.columbia.edu/~julia/
+    institution: Columbia University
+    last_name: Hirschberg
+    name: Julia Hirschberg
+    username: ~Julia_Hirschberg1
+  decision: Poster
+  file: 50.pdf
+  id: 50
+  openreview_id: 5urgpkqb5K
+  pdf_file: 1838223fd77d22dadfa3f94c75213d2237a07e97.pdf
+  title: Enhancing Pre-Trained Generative Language Models with Question Attended Span
+    Extraction on Machine Reading Comprehension
+- abstract: Retrieving relevant tables containing the necessary information to accurately
+    answer a given question over tables is critical to open-domain question-answering
+    (QA) systems. Previous methods assume the answer to such a question can be found
+    either in a single table or multiple tables identified through question decomposition
+    or rewriting. However, neither of these approaches is sufficient, as many questions
+    require retrieving multiple tables and joining them through a join plan that cannot
+    be discerned from the user query itself. If the join plan is not considered in
+    the retrieval stage, the subsequent steps of reasoning and answering based on
+    those retrieved tables are likely to be incorrect. To address this problem, we
+    introduce a method that uncovers useful join relations for any query and database
+    during table retrieval. We use a novel re-ranking method formulated as a mixed-integer
+    program that considers not only table-query relevance but also table-table relevance
+    that requires inferring join relationships. Our method outperforms the state-of-the-art
+    approaches for table retrieval by up to 9.3% in F1 score and for end-to-end QA
+    by up to 5.4% in accuracy.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: https://dblp.org/pid/276/5747
+    emails: peterbc@mit.edu
+    first_name: Peter Baile
+    google_scholar_id: https://scholar.google.com/citations?user=hVnM4FgAAAAJ&hl=en&oi=ao
+    homepage: https://peterbaile.github.io/
+    institution: Massachusetts Institute of Technology
+    last_name: Chen
+    name: Peter Baile Chen
+    semantic_scholar_id: https://www.semanticscholar.org/author/Peter-Baile-Chen/2120245522
+    username: ~Peter_Baile_Chen1
+  - emails: yizhang5@seas.upenn.edu
+    first_name: Yi
+    google_scholar_id: https://scholar.google.com/citations?user=nCQs42AAAAAJ&hl=en
+    homepage: https://yizhang.io/
+    institution: AWS AI Labs
+    last_name: Zhang
+    name: Yi Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yi-Zhang/46867002
+    username: ~Yi_Zhang25
+  - dblp_id: https://dblp.org/pid/r/DanRoth
+    emails: danroth@seas.upenn.edu
+    first_name: Dan
+    google_scholar_id: https://scholar.google.com/citations?user=E-bpPWgAAAAJ&hl=en
+    homepage: https://www.cis.upenn.edu/~danroth/
+    institution: University of Pennsylvania
+    last_name: Roth
+    name: Dan Roth
+    semantic_scholar_id: https://www.semanticscholar.org/author/D.-Roth/144590225
+    username: ~Dan_Roth3
+  decision: Oral
+  file: 53.pdf
+  id: 53
+  openreview_id: qOMlSMvTre
+  pdf_file: 16ec6c3512a7c22b536b850427f46070a848589f.pdf
+  title: Is Table Retrieval a Solved Problem? Join-Aware Multi-Table Retrieval
+- abstract: Editing knowledge in large language models is an attractive capability
+    that allows us to correct incorrectly learned facts during pre-training, as well
+    as update the model with an ever-growing list of new facts. While existing model
+    editing techniques have shown promise, they are usually evaluated using metrics
+    for reliability, specificity and generalization over one or few edits. We argue
+    that for model editing to have practical utility, we must be able to make multiple
+    edits to the same model. With this in mind, we evaluate current model editing
+    methods at scale, focusing on two state of the art methods - ROME and MEMIT. With
+    the lens of scalability, we evaluate model editing methods for three crucial properties
+    - editing proficiency, fact forgetting and downstream performance. We find that
+    as a model is edited sequentially with multiple facts, it continually becomes
+    less editable, forgets previously edited facts and loses the ability to perform
+    downstream tasks. For ROME and MEMIT, this "forgetting" happens in two phases
+    - an initial gradual but progressive forgetting phase followed by an abrupt or
+    catastrophic forgetting. Both gradual and catastrophic forgetting limit the usefulness
+    of model editing methods at scale - the former makes model editing less effective
+    as multiple edits are made to the model while the latter caps the scalability
+    of such model editing methods. Our analysis also highlights other key limitations
+    of ROME and MEMIT at scale. With our work, we push for better evaluation of model
+    editing and development of model editing methods keeping scalability in mind.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: https://dblp.org/pid/98/8230
+    emails: akshat571995@gmail.com
+    first_name: Akshat
+    google_scholar_id: https://scholar.google.com/citations?user=v80j6o0AAAAJ&hl=en&oi=sra
+    homepage: https://akshat57.github.io/
+    institution: University of California, Berkeley
+    last_name: Gupta
+    name: Akshat Gupta
+    semantic_scholar_id: https://www.semanticscholar.org/author/Akshat-Gupta/2124970757
+    username: ~Akshat_Gupta1
+  - emails: anuragrao@berkeley.edu
+    first_name: Anurag
+    last_name: Rao
+    name: Anurag Rao
+    orcid: https://orcid.org/0000-0001-8217-1513
+    username: ~Anurag_Rao1
+  - dblp_id: https://dblp.org/pid/54/7824
+    emails: gopala@berkeley.edu
+    first_name: Gopala
+    google_scholar_id: https://scholar.google.com/citations?user=VecEj6kAAAAJ&hl=en&oi=ao
+    homepage: http://people.eecs.berkeley.edu/~gopala/
+    institution: University of California, Berkeley
+    last_name: Anumanchipalli
+    name: Gopala Anumanchipalli
+    username: ~Gopala_Anumanchipalli1
+  decision: Poster
+  file: 54.pdf
+  id: 54
+  openreview_id: nGHPvPqg8b
+  pdf_file: cbea67581a087de40dc8c51ff9d353d5021d8a40.pdf
+  title: Model Editing at Scale leads to Gradual and Catastrophic Forgetting
+- abstract: Recent work using Rank-One Model Editing (ROME), a popular model editing
+    method, has shown that there are certain facts that the algorithm is unable to
+    edit without breaking the model. Such edits have previously been called disabling
+    edits. These disabling edits cause immediate model collapse and limits the use
+    of ROME for sequential editing. In this paper, we show that disabling edits are
+    an artifact of irregularities in the implementation of ROME. With this paper,
+    we provide a more stable implementation ROME, which we call r-ROME and show that
+    model collapse is no longer observed when making large scale sequential edits
+    with r-ROME, while further improving generalization and locality of model editing
+    compared to the original implementation of ROME. We also provide a detailed mathematical
+    explanation of the reason behind disabling edits.
+  archival: false
+  attributes:
+    paper_type: short
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/98/8230
+    emails: akshat571995@gmail.com
+    first_name: Akshat
+    google_scholar_id: https://scholar.google.com/citations?user=v80j6o0AAAAJ&hl=en&oi=sra
+    homepage: https://akshat57.github.io/
+    institution: University of California, Berkeley
+    last_name: Gupta
+    name: Akshat Gupta
+    semantic_scholar_id: https://www.semanticscholar.org/author/Akshat-Gupta/2124970757
+    username: ~Akshat_Gupta1
+  - emails: sidnbaskaran@gmail.com
+    first_name: Sidharth
+    homepage: https://sidnb13.github.io/
+    institution: Automorphic Inc. and Georgia Institute of Technology
+    last_name: Baskaran
+    name: Sidharth Baskaran
+    username: ~Sidharth_Baskaran1
+  - dblp_id: https://dblp.org/pid/54/7824
+    emails: gopala@berkeley.edu
+    first_name: Gopala
+    google_scholar_id: https://scholar.google.com/citations?user=VecEj6kAAAAJ&hl=en&oi=ao
+    homepage: http://people.eecs.berkeley.edu/~gopala/
+    institution: University of California, Berkeley
+    last_name: Anumanchipalli
+    name: Gopala Anumanchipalli
+    username: ~Gopala_Anumanchipalli1
+  decision: Poster
+  file: 55.pdf
+  id: 55
+  openreview_id: nzyQ5Mgc0I
+  pdf_file: 4fea678dad6c104a619110e33b9ece43fca7e45f.pdf
+  title: 'Rebuilding ROME : Resolving Model Collapse during Sequential Model Editing'
+- abstract: ROME and MEMIT are largely believed to be two different model editing
+    algorithms, with the major difference between them being the ability to perform
+    batched edits. In this paper, we unify these two algorithms under a single conceptual
+    umbrella, optimizing for the same goal, which we call the preservation-memorization
+    objective. ROME uses an equality constraint to optimize this objective to perform
+    one edit at a time, whereas MEMIT employs a more flexible least-square constraint
+    that allows for batched edits. We generalize ROME and enable batched editing with
+    equality constraint in the form of EMMET - an Equality-constrained Mass Model
+    Editing algorithm for Transformers, a new batched memory-editing algorithm. EMMET
+    can perform batched-edits up to a batch-size of 10,000, with very similar performance
+    to MEMIT across multiple dimensions. With the introduction of EMMET, we truly
+    unify ROME and MEMIT and show that both algorithms are equivalent in terms of
+    their optimization objective, their abilities (singular and batched editing),
+    their model editing performance and their limitations.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/98/8230
+    emails: akshat571995@gmail.com
+    first_name: Akshat
+    google_scholar_id: https://scholar.google.com/citations?user=v80j6o0AAAAJ&hl=en&oi=sra
+    homepage: https://akshat57.github.io/
+    institution: University of California, Berkeley
+    last_name: Gupta
+    name: Akshat Gupta
+    semantic_scholar_id: https://www.semanticscholar.org/author/Akshat-Gupta/2124970757
+    username: ~Akshat_Gupta1
+  - emails: sajnanidev@berkeley.edu
+    first_name: Dev
+    last_name: Sajnani
+    name: Dev Sajnani
+    semantic_scholar_id: https://www.semanticscholar.org/author/Dev-Sajnani/2292396298
+    username: ~Dev_Sajnani1
+  - dblp_id: https://dblp.org/pid/54/7824
+    emails: gopala@berkeley.edu
+    first_name: Gopala
+    google_scholar_id: https://scholar.google.com/citations?user=VecEj6kAAAAJ&hl=en&oi=ao
+    homepage: http://people.eecs.berkeley.edu/~gopala/
+    institution: University of California, Berkeley
+    last_name: Anumanchipalli
+    name: Gopala Anumanchipalli
+    username: ~Gopala_Anumanchipalli1
+  decision: Poster
+  file: 56.pdf
+  id: 56
+  openreview_id: P2pWUzZmWV
+  pdf_file: 02ce5e365e0fb2f2b1352bca25b213b2ec4c363a.pdf
+  title: A Unified Framework for Model Editing
+- abstract: "The rise of multimodal misinformation on social platforms poses significant\
+    \ challenges for individuals and societies. Its increased credibility and broader\
+    \ impact make detection more complex, requiring robust reasoning across diverse\
+    \ media types and profound knowledge for accurate verification. The emergence\
+    \ of Large Vision Language Model (LVLM) offers a potential solution to this problem.\
+    \ Leveraging their proficiency in processing visual and textual information, LVLM\
+    \ demonstrates promising capabilities in recognizing complex information and exhibiting\
+    \ strong reasoning skills. We investigate the potential of LVLM on multimodal\
+    \ misinformation detection and find that even though LVLM has a superior performance\
+    \ compared to LLMs, its profound reasoning may present limited power with a lack\
+    \ of evidence. Based on these observations, we propose LEMMA: LVLM-Enhanced Multimodal\
+    \ Misinformation Detection with External Knowledge Augmentation. LEMMA leverages\
+    \ LVLM intuition and reasoning capabilities while augmenting them with external\
+    \ knowledge to enhance the accuracy of misinformation detection. Our external\
+    \ knowledge extraction module adopts multi-query generation and image source tracing\
+    \ to enhance the rigor and comprehensiveness of LVLM\u2019s reasoning. We observed\
+    \ that LEMMA improves the accuracy over the top baseline LVLM by 9\\% and 13\\\
+    % on Twitter and Fakeddit datasets respectively."
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/331/2441
+    emails: keyangx3@illinois.edu
+    first_name: Keyang
+    last_name: Xuan
+    name: Keyang Xuan
+    semantic_scholar_id: https://www.semanticscholar.org/author/Keyang-Xuan/2159165546
+    username: ~Keyang_Xuan1
+  - emails: ly1387@nyu.edu
+    first_name: Li
+    google_scholar_id: https://scholar.google.com/citations?user=w1-maO0AAAAJ&hl=en
+    homepage: https://billyyi.top
+    last_name: Yi
+    name: Li Yi
+    username: ~Li_Yi9
+  - emails: fy10@illinois.edu
+    first_name: Fan
+    homepage: https://www.linkedin.com/in/fan-yang-3b5696286/
+    last_name: Yang
+    name: Fan Yang
+    username: ~Fan_Yang66
+  - emails: rw12@illinois.edu
+    first_name: Ruochen
+    homepage: https://www.linkedin.com/in/ruochen-wu-40a9b428b/
+    last_name: Wu
+    name: Ruochen Wu
+    username: ~Ruochen_Wu1
+  - emails: yifung2@illinois.edu
+    first_name: Yi
+    google_scholar_id: https://scholar.google.com/citations?user=eUae2K0AAAAJ&hl=en&oi=sra
+    homepage: https://yrf1.github.io
+    last_name: Fung
+    name: Yi Fung
+    semantic_scholar_id: https://www.semanticscholar.org/author/Y.-Fung/51135899
+    username: ~Yi_Fung1
+  - emails: hengji@illinois.edu
+    first_name: Heng
+    google_scholar_id: https://scholar.google.com/citations?user=z7GCqT4AAAAJ&hl=en
+    homepage: http://blender.cs.illinois.edu/hengji.html
+    institution: University of Illinois, Urbana-Champaign
+    last_name: Ji
+    name: Heng Ji
+    username: ~Heng_Ji3
+  decision: Poster
+  file: 61.pdf
+  id: 61
+  openreview_id: STta1fYzEX
+  pdf_file: 1ba2e1246069919f38e6448090d660950641bb5b.pdf
+  title: 'LEMMA: Towards LVLM-Enhanced Multimodal Misinformation Detection with External
+    Knowledge Augmentation'
+- abstract: 'The evolving landscape of Large Language Models (LLMs) and conversational
+    assistants has ushered in a need for dynamic, up-to-date, scalable, and configurable
+    conversational datasets to train and evaluate systems.
+
+    Ideally, these datasets are tailored for different user interaction settings,
+    such as text and voice, all of which introduce distinct nuances and modeling challenges.
+
+    Knowledge Graphs (KGs), with their structured and continuously evolving nature,
+    serve as an ideal reservoir for harnessing current and precise knowledge.
+
+    While there exist human-curated conversational datasets grounded on KGs, it is
+    hard to rely solely on them, as the information needs of users are in constant
+    flux.
+
+    Addressing this lacuna, we introduce ConvKGYarn, a scalable and effective method
+    to generate up-to-date, configurable synthetic conversational KGQA datasets.
+
+    Qualitative psychometric analyses elucidate the effectiveness of ConvKGYarn in
+    generating high-quality conversational data that rivals a popular conversational
+    KGQA dataset on various metrics while making strides in additional desirable properties
+    like adhering to human interaction configurations and functioning at a much larger
+    scale.
+
+    We further demonstrate the utility of ConvKGYarn by testing LLMs on varied conversations
+    to explore model behavior on conversational KGQA sets with different configurations
+    grounded on the same fact set from the KG.
+
+    Through our work, we aim to fortify the underpinnings of KGQA and evaluate the
+    parametric knowledge of LLMs.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - dblp_id: ''
+    emails: rpradeep@edu.uwaterloo.ca
+    first_name: Ronak
+    google_scholar_id: ''
+    homepage: ''
+    last_name: Pradeep
+    name: Ronak Pradeep
+    orcid: ''
+    username: ~Ronak_Pradeep1
+  - emails: danieljsklee@gmail.com
+    first_name: Daniel
+    institution: Apple
+    last_name: Lee
+    name: Daniel Lee
+    username: ~Daniel_Lee3
+  - dblp_id: https://dblp.org/pid/24/9
+    emails: ali.mousavi1988@gmail.com
+    first_name: Ali
+    google_scholar_id: https://scholar.google.com/citations?user=Yuxd6uYAAAAJ&hl=en
+    homepage: https://alimousavi1988.github.io/
+    institution: Apple
+    last_name: Mousavi
+    name: Ali Mousavi
+    username: ~Ali_Mousavi1
+  - dblp_id: https://dblp.org/pid/p/JeffreyPound
+    emails: jpound@gmail.com
+    first_name: Jeffrey
+    institution: Apple
+    last_name: Pound
+    name: Jeffrey Pound
+    username: ~Jeffrey_Pound1
+  - emails: y.sang@northeastern.edu
+    first_name: Yisi
+    google_scholar_id: https://scholar.google.com/citations?user=OPAGntEAAAAJ&hl=en
+    institution: Apple
+    last_name: Sang
+    name: Yisi Sang
+    username: ~Yisi_Sang1
+  - dblp_id: https://dblp.org/pid/00/7739
+    emails: jimmylin@uwaterloo.ca
+    first_name: Jimmy
+    homepage: https://cs.uwaterloo.ca/~jimmylin/
+    institution: University of Waterloo
+    last_name: Lin
+    name: Jimmy Lin
+    username: ~Jimmy_Lin2
+  - dblp_id: https://dblp.org/pid/i/IhabFIlyas
+    emails: ilyas@uwaterloo.ca
+    first_name: Ihab
+    google_scholar_id: https://scholar.google.com.tw/citations?user=YG6mTEIAAAAJ
+    homepage: https://cs.uwaterloo.ca/~ilyas/
+    institution: Apple and University of Waterloo
+    last_name: Ilyas
+    name: Ihab Ilyas
+    username: ~Ihab_Ilyas1
+  - dblp_id: https://dblp.org/pid/194/3158
+    emails: saloni.potdar@gmail.com
+    first_name: Saloni
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=D7EmAyEAAAAJ
+    homepage: https://salonipotdar.github.io
+    institution: Apple
+    last_name: Potdar
+    name: Saloni Potdar
+    username: ~Saloni_Potdar1
+  - emails: mostafaa@apple.com
+    first_name: Mostafa
+    homepage: https://github.com/arefiyan
+    institution: Apple
+    last_name: Arefiyan
+    name: Mostafa Arefiyan
+    username: ~Mostafa_Arefiyan2
+  - dblp_id: https://dblp.org/pid/60/2319
+    emails: yunyao@gmail.com
+    first_name: Yunyao
+    institution: Adobe Systems
+    last_name: Li
+    name: Yunyao Li
+    username: ~Yunyao_Li2
+  decision: Poster
+  file: 63.pdf
+  id: 63
+  openreview_id: tvXzwaVHwR
+  pdf_file: 1ea5f58c69a3045571f1656624ead370ac962b39.pdf
+  title: 'ConvKGYarn: Spinning Configurable and Scalable Conversational Knowledge
+    Graph QA datasets with Large Language Models'
+- abstract: 'Knowledge editing techniques (KEs) can update language models'' obsolete
+    or inaccurate knowledge learned from pre-training. However, KE also faces potential
+    malicious applications, e.g. inserting misinformation and toxic content. Moreover,
+    in the context of responsible AI, it is instructive for end-users to know whether
+    a generated output is driven by edited knowledge or first-hand knowledge from
+    pre-training.
+
+    To this end, we study detecting edited knowledge in language models by introducing
+    a novel task: given an edited model and a specific piece of knowledge the model
+    generates, our objective is to classify the knowledge as either "non-edited" (based
+    on the pre-training), or "edited" (based on subsequent editing).
+
+    We initiate the task with two state-of-the-art KEs, two language models, and two
+    datasets. We further propose a  simple classifier, __RepReg__, a logistic regression
+    model that takes hidden state representations as input features.
+
+    Our results reveal that __RepReg__ establishes a strong baseline, achieving a
+    peak accuracy of 99.81\%, and 97.79\% in out-of-domain settings. Second, __RepReg__
+    achieves near-optimal performance with a limited training set (200 training samples),
+    and it maintains its performance even in out-of-domain settings. Last, we find
+    it more challenging to separate edited and non-edited knowledge when they contain
+    the same object.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: paul.youssef@uni-marburg.de
+    first_name: Paul
+    google_scholar_id: https://scholar.google.de/citations?user=VhMWcqYAAAAJ
+    institution: "Phillips-Universit\xE4t Marburg"
+    last_name: Youssef
+    name: Paul Youssef
+    orcid: https://orcid.org/0009-0004-4953-4553
+    semantic_scholar_id: https://www.semanticscholar.org/author/Paul-Youssef/2066078147
+    username: ~Paul_Youssef1
+  - dblp_id: https://dblp.org/pid/151/8970.html
+    emails: zhixue.zhao@sheffield.ac.uk
+    first_name: Zhixue
+    google_scholar_id: https://scholar.google.com/citations?user=bwiMxxsAAAAJ&hl=en&oi=ao
+    homepage: https://casszhao.github.io/cass/
+    institution: University of Sheffield, University of Sheffield
+    last_name: Zhao
+    name: Zhixue Zhao
+    orcid: https://orcid.org/0000-0002-3060-269X
+    username: ~Zhixue_Zhao2
+  - dblp_id: https://dblp.org/pid/160/1725
+    emails: joerg.schloetterer@uni-marburg.de
+    first_name: "J\xF6rg"
+    google_scholar_id: https://scholar.google.com/citations?user=5A2TGRgAAAAJ
+    institution: "Universit\xE4t Mannheim and Phillips-Universit\xE4t Marburg"
+    last_name: "Schl\xF6tterer"
+    name: "J\xF6rg Schl\xF6tterer"
+    orcid: https://orcid.org/0000-0002-3678-0390
+    semantic_scholar_id: "https://www.semanticscholar.org/author/J\xF6rg-Schl\xF6\
+      tterer/3044872"
+    username: "~J\xF6rg_Schl\xF6tterer1"
+  - dblp_id: https://dblp.org/pid/47/5048
+    emails: christin.seifert@uni-marburg.de
+    first_name: Christin
+    google_scholar_id: https://scholar.google.de/citations?hl=en&user=aK6ZccUAAAAJ
+    homepage: http://christinseifert.info
+    institution: "Phillips-Universit\xE4t Marburg and University of Twente"
+    last_name: Seifert
+    name: Christin Seifert
+    orcid: https://orcid.org/0000-0002-6776-3868
+    username: ~Christin_Seifert1
+  decision: Oral
+  file: 67.pdf
+  id: 67
+  openreview_id: 24aoT4xDoF
+  pdf_file: 0abd00950f2cefe016cb39e97fe33a8e6543fa59.pdf
+  title: Detecting Edited Knowledge in Language Models
+- abstract: "Despite the impressive capabilities of Large Language Models (LLMs) in\
+    \ various tasks, their vulnerability to unsafe prompts remains a critical issue.\
+    \ These prompts can lead LLMs to generate responses on illegal or sensitive topics,\
+    \ posing a significant threat to their safe and ethical use. Existing approaches\
+    \ address this issue using classification models, divided into LLM-based and API-based\
+    \ methods. LLM based models demand substantial resources and large datasets, whereas\
+    \ API-based models are cost-effective but might overlook linguistic nuances. With\
+    \ the increasing complexity of unsafe prompts, similarity search-based tech\x02\
+    015 niques that identify specific features of unsafe content provide a more robust\
+    \ and effective solution to this evolving problem. This paper investigates the\
+    \ potential of sentence encoders to distinguish safe from unsafe content. We introduce\
+    \ new pairwise datasets and the Cate\x02021 gorical Purity (CP) metric to measure\
+    \ this capability. Our findings reveal both the effectiveness and limitations\
+    \ of existing sentence encoders, proposing directions to improve sentence encoders\
+    \ to operate as robust safety detectors."
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: jsk0821@bdai.snu.ac.kr
+    first_name: Jinseok
+    homepage: https://www.linkedin.com/in/jinseok-kim-06612a25b/
+    institution: Seoul National University
+    last_name: Kim
+    name: Jinseok Kim
+    username: ~Jinseok_Kim3
+  - emails: wjdwodnjs302@snu.ac.kr
+    first_name: Jaewon
+    homepage: http://dm.snu.ac.kr/ko/
+    institution: Seoul National University
+    last_name: Jung
+    name: Jaewon Jung
+    username: ~Jaewon_Jung2
+  - emails: sy917kim@gmail.com
+    first_name: Sangyeop
+    google_scholar_id: https://scholar.google.com/citations?user=92CZzsoAAAAJ&hl=ko
+    institution: Coxwave and Seoul National University
+    last_name: Kim
+    name: Sangyeop Kim
+    orcid: https://orcid.org/0000-0002-7584-1061
+    username: ~Sangyeop_Kim1
+  - emails: sohhyung@bdai.snu.ac.kr
+    first_name: Sohhyung
+    homepage: http://bdai.snu.ac.kr
+    institution: Seoul National University
+    last_name: Park
+    name: Sohhyung Park
+    username: ~Sohhyung_Park1
+  - dblp_id: https://dblp.org/pid/60/2556
+    emails: zoon@snu.ac.kr
+    first_name: Sungzoon
+    homepage: http://bdai.snu.ac.kr/ko/people/professor
+    institution: Seoul National University
+    last_name: Cho
+    name: Sungzoon Cho
+    username: ~Sungzoon_Cho1
+  decision: Poster
+  end_page: 170
+  file: 69.pdf
+  id: 69
+  num_pages: 15
+  openreview_id: TSiH1u5lm2
+  pdf_file: 453c18221ff1972aa1a15c307a45cf9681e63baf.pdf
+  start_page: 156
+  title: 'Safe-Embed: Unveiling the Safety-Critical Knowledge of Sentence Encoders'
+- abstract: Despite large language models' (LLMs') recent advancements, their bias
+    and hallucination issues persist, and their ability to offer consistent and preferential
+    rankings remains underexplored. This study investigates the capacity of LLMs to
+    provide consistent ordinal preferences, a crucial aspect in scenarios lacking
+    absolute answers. We introduce a formalization of consistency based on order theory,
+    outlining criteria such as transitivity, asymmetry, reversibility, and independence
+    from irrelevant alternatives. Our diagnostic experiments on selected state-of-the-art
+    LLMs reveal their inability to meet these criteria, indicating a strong positional
+    bias and poor transitivity, with preferences easily swayed by irrelevant alternatives.
+    These findings highlight a significant inconsistency in LLM-generated preferential
+    rankings, underscoring the need for further research to address these limitations.
+  archival: true
+  attributes:
+    paper_type: short
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - emails: zhao\_xiutian@outlook.com
+    first_name: Xiutian
+    homepage: https://xiutian.github.io
+    institution: University of Edinburgh
+    last_name: Zhao
+    name: Xiutian Zhao
+    username: ~Xiutian_Zhao1
+  - dblp_id: https://dblp.uni-trier.de/pid/181/2613.html
+    emails: wangke215@huawei.com
+    first_name: Ke
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=nWI7Ql0AAAAJ
+    institution: Huawei Technologies Ltd.
+    last_name: Wang
+    name: Ke Wang
+    orcid: https://orcid.org/0000-0003-2300-0743
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ke-Wang/50394960
+    username: ~Ke_Wang2
+  - emails: peng.wei1@huawei.com
+    first_name: Wei
+    homepage: https://scholars.latrobe.edu.au/w2peng/publications
+    institution: Huawei Technologies Ltd.
+    last_name: Peng
+    name: Wei Peng
+    username: ~Wei_Peng6
+  decision: Poster
+  end_page: 176
+  file: 70.pdf
+  id: 70
+  num_pages: 6
+  openreview_id: w5mPcap67k
+  pdf_file: ee12dd43219e5f84794c543884bb908b0bb6c3f7.pdf
+  start_page: 171
+  title: Measuring the Inconsistency of Large Language Models in Preferential Ranking
+- abstract: 'Retrieval-augmented generation (RAG) has recently emerged as a promising
+    solution for incorporating up-to-date or domain-specific knowledge into large
+    language models (LLMs) and improving LLM factuality, but is predominantly studied
+    in English-only settings. In this work, we consider RAG in the multilingual setting
+    (mRAG), i.e. with user queries and the datastore in 13 languages, and investigate
+    which components and with which adjustments are needed to build a well-performing
+    mRAG pipeline, that can be used as a strong baseline in future works. Our findings
+    highlight that despite the availability of high-quality off-the-shelf multilingual
+    retrievers and generators, task-specific prompt engineering is needed to enable
+    generation in user languages. Moreover, current evaluation metrics need adjustments
+    for multilingual setting, to account for variations in spelling named entities.  The
+    main limitations to be addressed in future works include frequent code-switching
+    in non-Latin alphabet languages, occasional fluency errors, wrong reading of the
+    provided documents, or irrelevant retrieval. We release the code for the resulting
+    mRAG baseline pipeline at https://github.com/naver/bergen, Documentation: https://github.com/naver/bergen/blob/main/documentations/multilingual.md.'
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Regular reviewing
+  authors:
+  - dblp_id: https://dblp.org/pid/205/2973
+    emails: nadiinchi@gmail.com
+    first_name: Nadezhda
+    google_scholar_id: https://scholar.google.ru/citations?user=8ovzJjEAAAAJ&hl
+    homepage: https://nadiinchi.github.io/
+    institution: Naver Labs Europe
+    last_name: Chirkova
+    name: Nadezhda Chirkova
+    semantic_scholar_id: https://www.semanticscholar.org/author/Nadezhda-Chirkova/145727842
+    username: ~Nadezhda_Chirkova1
+  - dblp_id: https://dblp.org/pid/241/5197
+    emails: d.m.rau@uva.nl
+    first_name: David
+    google_scholar_id: https://scholar.google.com/citations?user=lz-VGnoAAAAJ
+    last_name: Rau
+    name: David Rau
+    username: ~David_Rau1
+  - dblp_id: https://dblp.org/pid/93/1978
+    emails: herve.dejean@naverlabs.com
+    first_name: "Herv\xE9"
+    google_scholar_id: https://scholar.google.com/citations?user=ADMeAc4AAAAJ&hl=fr
+    institution: Naver Labs Europe
+    last_name: "D\xE9jean"
+    name: "Herv\xE9 D\xE9jean"
+    orcid: https://orcid.org/0000-0002-9837-5358
+    semantic_scholar_id: https://www.semanticscholar.org/author/Herv%C3%A9-D%C3%A9jean/2131960
+    username: "~Herv\xE9_D\xE9jean1"
+  - emails: thibault.formal@naverlabs.com
+    first_name: Thibault
+    google_scholar_id: https://scholar.google.com/citations?user=mhVuc98AAAAJ&hl=fr
+    institution: Naver Labs Europe
+    last_name: Formal
+    name: Thibault Formal
+    username: ~Thibault_Formal1
+  - dblp_id: https://dblp.org/pid/97/2910.html
+    emails: stephane.clinchant@gmail.com
+    first_name: "St\xE9phane"
+    google_scholar_id: https://scholar.google.fr/citations?user=PG0EA24AAAAJ&hl=fr
+    institution: Naver Labs Europe
+    last_name: Clinchant
+    name: "St\xE9phane CLINCHANT"
+    semantic_scholar_id: https://www.semanticscholar.org/author/S.-Clinchant/2207074
+    username: "~St\xE9phane_CLINCHANT2"
+  - dblp_id: https://dblp.org/pid/32/11424.html
+    emails: vassilina.nikoulina@naverlabs.com
+    first_name: Vassilina
+    google_scholar_id: https://scholar.google.fr/citations?user=IVJ4wN4AAAAJ&hl=fr
+    institution: Naver Labs Europe
+    last_name: Nikoulina
+    name: Vassilina Nikoulina
+    semantic_scholar_id: https://www.semanticscholar.org/author/Vassilina-Nikoulina/2841761
+    username: ~Vassilina_Nikoulina1
+  decision: Poster
+  end_page: 188
+  file: 74.pdf
+  id: 74
+  num_pages: 12
+  openreview_id: gwDNOpWapB
+  pdf_file: b9246f9ebfa5bbbf4c99e7d62ec160b015dc655d.pdf
+  start_page: 177
+  title: Retrieval-augmented generation in multilingual settings
+- abstract: 'Recent surge in the accessibility of large language models (LLMs) to
+    the general population can lead to untrackable use of such models for medical-related
+    recommendations. Language generation via LLMs models has two key problems: firstly,
+    they are prone to hallucination and therefore, for any medical purpose they require
+    scientific and factual grounding; secondly, LLMs pose tremendous challenge to
+    computational resources due to their gigantic model size. In this work, we introduce
+    pRAGe, a Pipeline for Retrieval Augmented Generation and Evaluation of medical
+    paraphrases generation using Small Language Models (SLM). We study the effectiveness
+    of SLMs and the impact of external knowledge base for medical paraphrase generation
+    in French.'
+  archival: true
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: ioana.buhnila@univ-lorraine.fr
+    first_name: Ioana
+    google_scholar_id: https://scholar.google.com/citations?user=JZEnn_AAAAAJ&hl=fr&oi=ao
+    homepage: https://perso.atilf.fr/ibuhnila/
+    last_name: Buhnila
+    name: Ioana Buhnila
+    username: ~Ioana_Buhnila1
+  - dblp_id: https://dblp.org/pid/22/3606
+    emails: aman.sinha@univ-lorraine.fr
+    first_name: Aman
+    google_scholar_id: https://scholar.google.com/citations?user=aNuvZAkAAAAJ&hl=en
+    homepage: https://amansinha09.github.io
+    last_name: Sinha
+    name: Aman Sinha
+    username: ~Aman_Sinha3
+  - dblp_id: https://dblp.org/pid/84/1588
+    emails: mathieu.constant@univ-lorraine.fr
+    first_name: Mathieu
+    institution: "Universit\xE9 de Lorraine, CNRS, ATILF"
+    last_name: Constant
+    name: Mathieu Constant
+    semantic_scholar_id: https://www.semanticscholar.org/author/M.-Constant/2614795
+    username: ~Mathieu_Constant1
+  decision: Poster
+  end_page: 203
+  file: 75.pdf
+  id: 75
+  num_pages: 15
+  openreview_id: E7B6eSEmah
+  pdf_file: 408cbbd0383dd50f8ce65ae9018c90207ab240e3.pdf
+  start_page: 189
+  title: 'Retrieve, Generate, Evaluate: A Case Study for Medical Paraphrases Generation
+    with Small Language Models'
+- abstract: 'Existing work on Temporal Question Answering (TQA) has predominantly
+    focused on questions anchored to specific timestamps or events (e.g. ''Who was
+    the US president in 1970?''). Little work has studied questions whose temporal
+    context is relative to the present time (e.g. ''Who was the previous US president?'').
+    We refer to this problem as Present-Anchored Temporal QA (PATQA). PATQA poses
+    unique challenges: (1) large language models (LLMs) may have outdated knowledge,
+    (2) complex temporal relationships (e.g. ''before'', ''previous'') are hard to
+    reason, (3) multi-hop reasoning may be required, and (4) the gold answers of benchmarks
+    must be continuously updated. To address these challenges, we introduce the PAT-Questions
+    benchmark, which includes single and multi-hop temporal questions. The answers
+    in PAT-Questions can be automatically refreshed by re-running SPARQL queries on
+    a knowledge graph, if available. We evaluate several state-of-the-art LLMs and
+    a SOTA temporal reasoning model (TEMPREASON-T5) on PAT-Questions through direct
+    prompting and retrieval-augmented generation (RAG). The results highlight the
+    limitations of existing solutions in PATQA and motivate the need for new methods
+    to improve PATQA reasoning capabilities.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: jmeem001@ucr.edu
+    first_name: Jannat
+    institution: University of California, Riverside
+    last_name: Meem
+    middle_name: Ara
+    name: Jannat Ara Meem
+    username: ~Jannat_Ara_Meem1
+  - emails: mrash013@ucr.edu
+    first_name: Muhammad
+    homepage: https://www.cs.ucr.edu/~mrash013/
+    last_name: Rashid
+    middle_name: Shihab
+    name: Muhammad Shihab Rashid
+    username: ~Muhammad_Shihab_Rashid1
+  - dblp_id: https://dblp.org/pid/84/486
+    emails: yue.dong@ucr.edu
+    first_name: Yue
+    google_scholar_id: https://scholar.google.ca/citations?user=WYkn4loAAAAJ&hl=en
+    homepage: https://yuedong.us/
+    institution: University of California, Riverside and McGill University
+    last_name: Dong
+    name: Yue Dong
+    username: ~Yue_Dong2
+  - dblp_id: https://dblp.org/pid/42/5855
+    emails: vagelis@cs.ucr.edu
+    first_name: Vagelis
+    google_scholar_id: https://scholar.google.com/citations?user=nKR2tGvMLFMC&hl=en
+    homepage: https://www.cs.ucr.edu/~vagelis
+    institution: University of California, Riverside
+    last_name: Hristidis
+    name: Vagelis Hristidis
+    username: ~Vagelis_Hristidis3
+  decision: Poster
+  file: 78.pdf
+  id: 78
+  openreview_id: S6M7JRGEa6
+  pdf_file: bba6cd8208394be5ac238ce671065c13270b3dc2.pdf
+  title: 'PAT-Questions: A Self-Updating Benchmark for Present-Anchored Temporal Question-Answering'
+- abstract: 'Although model editing has shown promise in revising knowledge in Large
+    Language Models (LLMs), its impact on the inherent capabilities of LLMs is often
+    overlooked. In this work, we reveal a critical phenomenon: even a single edit
+    can trigger model collapse, manifesting as significant performance degradation
+    in various benchmark tasks. However, benchmarking LLMs after each edit, while
+    necessary to prevent such collapses, is impractically time-consuming and resource-intensive.
+    To mitigate this, we propose using perplexity as a surrogate metric, validated
+    by extensive experiments demonstrating changes in an edited model''s perplexity
+    are strongly correlated with its downstream task performances. We further conduct
+    an in-depth study on sequential editing, a practical setting for real-world scenarios,
+    across various editing methods and LLMs, focusing on hard cases from our previous
+    single edit studies. The results indicate that nearly all examined editing methods
+    result in model collapse after only few edits. To facilitate further research,
+    we have utilized GPT-3.5 to develop a new dataset, HardEdit, based on those hard
+    cases. This dataset aims to establish the foundation for pioneering research in
+    reliable model editing and the mechanisms underlying editing-induced model collapse.
+    We hope this work can draw the community''s attention to the potential risks inherent
+    in model editing practices.'
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: yangyywl@gmail.com
+    first_name: Wanli
+    google_scholar_id: https://scholar.google.com/citations?user=iW5hk4EAAAAJ
+    homepage: https://yangwl.site
+    last_name: Yang
+    name: Wanli Yang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Wanli-Yang/2280200472
+    username: ~Wanli_Yang1
+  - dblp_id: https://dblp.org/pid/51/394-1
+    emails: ofey.sunfei@gmail.com
+    first_name: Fei
+    google_scholar_id: https://scholar.google.com/citations?user=OlRxBhcAAAAJ
+    homepage: http://ofey.me
+    institution: Institute of Computing Technology, Chinese Academy of Sciences
+    last_name: Sun
+    name: Fei Sun
+    orcid: https://orcid.org/0000-0002-6146-148X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Fei-Sun/143770118
+    username: ~Fei_Sun3
+  - emails: xinyuma2016@gmail.com
+    first_name: Xinyu
+    google_scholar_id: https://scholar.google.com/citations?user=DXYzAIkAAAAJ&hl=en
+    homepage: https://albert-ma.github.io/
+    institution: Baidu
+    last_name: Ma
+    name: Xinyu Ma
+    orcid: https://orcid.org/0000-0002-5511-9370
+    semantic_scholar_id: https://www.semanticscholar.org/author/Xinyu-Ma/121875983
+    username: ~Xinyu_Ma4
+  - emails: liuxun21@mails.ucas.ac.cn
+    first_name: Xun
+    homepage: https://antiquality.github.io
+    last_name: Liu
+    name: Xun Liu
+    username: ~Xun_Liu6
+  - dblp_id: https://dblp.org/pid/91/4572
+    emails: yindawei@acm.org
+    first_name: Dawei
+    google_scholar_id: https://scholar.google.com/citations?user=GuQ9bpAAAAAJ&hl=zh-CN
+    institution: Baidu
+    last_name: Yin
+    name: Dawei Yin
+    username: ~Dawei_Yin1
+  - dblp_id: https://dblp.org/pid/44/912
+    emails: cxq@ict.ac.cn
+    first_name: Xueqi
+    homepage: http://www.ict.cas.cn/sourcedb_2018_ict_cas/cn/jssrck/200909/t20090917_2496598.html
+    institution: ', Chinese Academy of Sciences'
+    last_name: Cheng
+    name: Xueqi Cheng
+    username: ~Xueqi_Cheng1
+  decision: Poster
+  file: 80.pdf
+  id: 80
+  openreview_id: WhRF8uoQqX
+  pdf_file: ce4f4180b37327e8afc62eca43c3c7a3b0cdb2c9.pdf
+  title: 'The Butterfly Effect of Model Editing: Few Edits Can Trigger Large Language
+    Models Collapse'
+- abstract: Despite great performance on many tasks, language models (LMs) still struggle
+    with reasoning, sometimes providing responses that cannot possibly be true because
+    they stem from logical incoherence.  We call such responses strong hallucinations
+    and prove that they follow from an LM's computation of its internal representations
+    for logical operators and outputs from those representations.  Focusing on negation,
+    we provide a novel solution in which negation is treated not as another element
+    of a latent representation, but as an operation over an LM's latent representations
+    that constrains how they may evolve}. We show that our approach improves model
+    performance in cloze prompting and natural language inference tasks with negation
+    without requiring training on sparse negative data.
+  archival: false
+  attributes:
+    paper_type: long
+    presentation_type: N/A
+    submitted_area: Direct commitment (for ACL papers)
+  authors:
+  - emails: sbhar8597@gmail.com
+    first_name: Swarnadeep
+    last_name: Bhar
+    name: Swarnadeep Bhar
+    username: ~Swarnadeep_Bhar1
+  - dblp_id: https://dblp.org/pid/33/3380
+    emails: asher@irit.fr
+    first_name: Nicholas
+    google_scholar_id: https://scholar.google.com/citations?user=yQ5Th-sAAAAJ&hl=en&oi=ao
+    institution: CNRS
+    last_name: Asher
+    name: Nicholas Asher
+    semantic_scholar_id: https://www.semanticscholar.org/author/Nicholas-Asher/4322924
+    username: ~Nicholas_Asher1
+  decision: Poster
+  file: 82.pdf
+  id: 82
+  openreview_id: dzGG0fun2r
+  pdf_file: a164eaffa7a5b1c15dbd62b9301e94b17a87ee02.pdf
+  title: Strong hallucinations from negation and how to fix them

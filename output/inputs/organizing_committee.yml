@@ -1,0 +1,24 @@
+- role: Program Chairs
+  members:
+    - first_name: Sha
+      last_name: Li
+      institution: University of Illinois, Urbana-Champaign
+    - first_name: Manling
+      last_name: Li
+      institution: Northwestern University
+    - first_name: Michael
+      middle_name: J.Q.
+      last_name: Zhang
+      institution: University of Texas at Austin
+    - first_name: Mor
+      last_name: Geva
+      institution: Tel Aviv University and Google Research
+    - first_name: Peter
+      last_name: Hase
+      institution: University of North Carolina at Chapel Hill
+    - first_name: Eunsol
+      last_name: Choi
+      institution: University of Texas at Austin
+    - first_name: Heng
+      last_name: Ji
+      institution: University of Illinois, Urbana-Champaign
